@@ -2,10 +2,10 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Thu Nov 23 14:37:40 2017
-# Process ID: 13984
+# Start of session at: Thu Nov 23 15:11:43 2017
+# Process ID: 11508
 # Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7972 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3008 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
 # Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/vivado.log
 # Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT\vivado.jou
 #-----------------------------------------------------------
@@ -16,4 +16,38 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Softwares/Vivado/Vivado/2016.4/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 789.422 ; gain = 128.355
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 824.762 ; gain = 155.426
+set_property -dict [list CONFIG.implementation_options {radix_2_burst_io} CONFIG.target_data_throughput {100} CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {0}] [get_ips FFT]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'target_data_throughput' from '10' to '100' has been ignored for IP 'FFT'
+add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v
+reset_run FFT_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v" into library work [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v:1]
+[Thu Nov 23 15:14:09 2017] Launched FFT_synth_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/FFT_synth_1/runme.log
+[Thu Nov 23 15:14:09 2017] Launched synth_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/runme.log
+set_property -dict [list CONFIG.implementation_options {radix_2_burst_io} CONFIG.target_data_throughput {100} CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {0}] [get_ips FFT]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'target_data_throughput' from '10' to '100' has been ignored for IP 'FFT'
+remove_files  -fileset FFT E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci
+INFO: [Project 1-386] Moving file 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci' from fileset 'FFT' to fileset 'sources_1'.
+file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ip/FFT E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts/FFT
+create_ip -name xfft -vendor xilinx.com -library ip -version 9.0 -module_name FFT -dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT
+set_property -dict [list CONFIG.target_clock_frequency {100} CONFIG.implementation_options {radix_2_burst_io} CONFIG.target_data_throughput {100} CONFIG.input_width {14} CONFIG.scaling_options {unscaled} CONFIG.xk_index {true} CONFIG.output_ordering {natural_order} CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {0}] [get_ips FFT]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'target_data_throughput' from '50' to '100' has been ignored for IP 'FFT'
+generate_target {instantiation_template} [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'FFT'...
+generate_target all [get_files  e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'FFT'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'FFT'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'FFT'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'FFT'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'FFT'...
+catch { config_ip_cache -export [get_ips -all FFT] }
+export_ip_user_files -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci]
+launch_runs -jobs 4 FFT_synth_1
+[Thu Nov 23 15:20:05 2017] Launched FFT_synth_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/FFT_synth_1/runme.log
+export_simulation -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

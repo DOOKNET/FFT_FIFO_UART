@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log FFT_Control_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_Control_2.tcl
+EAStep vivado -log FFT_Control.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_Control.tcl

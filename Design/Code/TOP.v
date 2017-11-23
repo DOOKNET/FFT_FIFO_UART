@@ -1,17 +1,17 @@
-module TOP(
-    input   sclk,
-    output  signed  [13:0]  data_re,
-    output  signed  [13:0]  data_im
+module	TOP(
+	input	clk,
+	input	DRY,
+	input	ovr_in,
+	input	signed	[13:0]	AD,
+	output	ad_clk,
+    output  tx,
 );
 
-wire     signed  [13:0]  data_out_reg;
+wire	ovr_out;
+assign	ad_clk = clk;
 
-//---------------------------------//
-test_wave       test_wave_inst0(
-    .sclk       (sclk),
-    .data_out   (data_out_reg)
-);
-//--------------------------------//
+
+
 
 
 endmodule 

@@ -2,35 +2,35 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Thu Nov 16 00:22:14 2017
-# Process ID: 22320
+# Start of session at: Thu Nov 23 15:20:06 2017
+# Process ID: 11444
 # Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/FFT_synth_1
 # Command line: vivado.exe -log FFT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT.tcl
 # Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/FFT_synth_1/FFT.vds
 # Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/FFT_synth_1\vivado.jou
 #-----------------------------------------------------------
 source FFT.tcl -notrace
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 309.523 ; gain = 99.383
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 309.949 ; gain = 100.102
 INFO: [Synth 8-638] synthesizing module 'FFT' [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/synth/FFT.vhd:83]
 INFO: [Synth 8-256] done synthesizing module 'FFT' (45#1) [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/synth/FFT.vhd:83]
-Finished RTL Elaboration : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 458.688 ; gain = 248.547
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 458.688 ; gain = 248.547
+Finished RTL Elaboration : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 459.113 ; gain = 249.266
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 459.113 ; gain = 249.266
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 609.617 ; gain = 1.148
-Finished Constraint Validation : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 609.617 ; gain = 399.477
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 609.617 ; gain = 399.477
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 609.617 ; gain = 399.477
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:22 ; elapsed = 00:01:30 . Memory (MB): peak = 609.617 ; gain = 399.477
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:34 . Memory (MB): peak = 609.617 ; gain = 399.477
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:46 ; elapsed = 00:01:55 . Memory (MB): peak = 653.168 ; gain = 443.027
-Finished Timing Optimization : Time (s): cpu = 00:01:47 ; elapsed = 00:01:57 . Memory (MB): peak = 670.809 ; gain = 460.668
-Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:58 . Memory (MB): peak = 680.734 ; gain = 470.594
-Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:02:00 . Memory (MB): peak = 680.734 ; gain = 470.594
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:02:00 . Memory (MB): peak = 680.734 ; gain = 470.594
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:50 ; elapsed = 00:02:00 . Memory (MB): peak = 680.734 ; gain = 470.594
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:50 ; elapsed = 00:02:00 . Memory (MB): peak = 680.734 ; gain = 470.594
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:51 ; elapsed = 00:02:00 . Memory (MB): peak = 680.734 ; gain = 470.594
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:51 ; elapsed = 00:02:00 . Memory (MB): peak = 680.734 ; gain = 470.594
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 609.875 ; gain = 1.207
+Finished Constraint Validation : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 609.875 ; gain = 400.027
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 609.875 ; gain = 400.027
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 609.875 ; gain = 400.027
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 609.875 ; gain = 400.027
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 609.875 ; gain = 400.027
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 653.504 ; gain = 443.656
+Finished Timing Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:45 . Memory (MB): peak = 670.992 ; gain = 461.145
+Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:01:47 . Memory (MB): peak = 680.332 ; gain = 470.484
+Finished IO Insertion : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
 
 Report Cell Usage: 
 +------+----------+------+
@@ -54,5 +54,5 @@ Report Cell Usage:
 |16    |FDE       |    10|
 |17    |FDRE      |  1136|
 +------+----------+------+
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:51 ; elapsed = 00:02:00 . Memory (MB): peak = 680.734 ; gain = 470.594
-synth_design: Time (s): cpu = 00:01:49 ; elapsed = 00:01:58 . Memory (MB): peak = 680.734 ; gain = 449.539
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:46 . Memory (MB): peak = 680.332 ; gain = 449.383

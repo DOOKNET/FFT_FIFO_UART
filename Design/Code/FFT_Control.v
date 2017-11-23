@@ -1,12 +1,12 @@
-module FFT_Control_3(
+module FFT_Control(
     input   clk,
-    input   [31:0]  s_axis_data_tdata,  //输入处理的数据
-    output  s_axis_config_tready,       //IP Core准备接收配置信号
-    output  s_axis_data_tready,         //IP Core准备接收数据信号
-    output  [31:0]  data_out_re,
-    output  [31:0]  data_out_im,
-    output  m_axis_data_tvalid,          //输出数据有效信号
-    output  [15:0]  m_axis_data_tuser           //输出数据计数
+    input   [31:0]  s_axis_data_tdata,      //输入处理的数据
+    output  s_axis_config_tready,           //IP Core准备接收配置信号
+    output  s_axis_data_tready,             //IP Core准备接收数据信号
+    output  [31:0]  data_out_re,    
+    output  [31:0]  data_out_im,    
+    output  m_axis_data_tvalid,             //输出数据有效信号
+    output  [15:0]  m_axis_data_tuser       //输出数据计数
 );
 //---------------输入信号-------------//
 reg     [10:0]   cnt = 0;    //计数器
@@ -23,7 +23,6 @@ wire    event_tlast_unexpected ;
 wire    event_tlast_missing;
 wire    event_data_in_channel_halt;
 wire    event_data_out_channel_halt;       
-//wire    [15:0] m_axis_data_tuser;
 wire    event_status_channel_halt;     
 
 /*
@@ -89,7 +88,7 @@ always @(posedge clk) begin
     end
 end
 //---------------------------------------------------------//
-      
+
 FFT                             FFT_inst0(
     .aclk                       (clk),                                              
     .s_axis_config_tdata        (s_axis_config_tdata),                              
@@ -115,4 +114,3 @@ FFT                             FFT_inst0(
 assign data_out_re=m_axis_data_tdata[31:0];//低32位为实部信号
 assign data_out_im=m_axis_data_tdata[63:32]; // 高32位为虚部，
 endmodule 
-  
