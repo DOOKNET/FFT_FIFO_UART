@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Nov 23 15:20:05 2017">
+<application name="pa" timeStamp="Fri Nov 24 02:44:06 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="63711128d3c547b390334d17697060ed" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -18,12 +18,12 @@ This means code written to parse this file will need to be revisited each subseq
 </item>
 <item name="Java Command Handlers">
 <property name="AddSources" value="14" type="JavaHandler"/>
-<property name="CoreView" value="4" type="JavaHandler"/>
-<property name="CustomizeCore" value="6" type="JavaHandler"/>
-<property name="EditDelete" value="16" type="JavaHandler"/>
+<property name="CoreView" value="5" type="JavaHandler"/>
+<property name="CustomizeCore" value="7" type="JavaHandler"/>
+<property name="EditDelete" value="17" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="5" type="JavaHandler"/>
-<property name="RecustomizeCore" value="44" type="JavaHandler"/>
+<property name="RecustomizeCore" value="45" type="JavaHandler"/>
 <property name="RunSynthesis" value="53" type="JavaHandler"/>
 <property name="SetGlobalInclude" value="2" type="JavaHandler"/>
 <property name="SetTopNode" value="10" type="JavaHandler"/>
@@ -51,22 +51,22 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES" value="7" type="GuiResourceData"/>
 <property name="AddSrcWizard_SPECIFY_SYSTEM_GENERATOR_FOR_DSP_SOURCES" value="1" type="GuiResourceData"/>
 <property name="BaseDialog_CANCEL" value="16" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="93" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="96" type="GuiResourceData"/>
 <property name="BaseDialog_YES" value="1" type="GuiResourceData"/>
 <property name="CmdMsgDialog_MESSAGES" value="6" type="GuiResourceData"/>
 <property name="CmdMsgDialog_OK" value="8" type="GuiResourceData"/>
 <property name="CmdMsgDialog_OPEN_MESSAGES_VIEW" value="4" type="GuiResourceData"/>
-<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="224" type="GuiResourceData"/>
-<property name="CustomizeCoreDialog_CHOOSE_IP_LOCATION" value="7" type="GuiResourceData"/>
+<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="237" type="GuiResourceData"/>
+<property name="CustomizeCoreDialog_CHOOSE_IP_LOCATION" value="9" type="GuiResourceData"/>
 <property name="CustomizeCoreDialog_DOCUMENTATION" value="2" type="GuiResourceData"/>
-<property name="CustomizeCoreDialog_IP_LOCATION" value="7" type="GuiResourceData"/>
-<property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="53" type="GuiResourceData"/>
+<property name="CustomizeCoreDialog_IP_LOCATION" value="9" type="GuiResourceData"/>
+<property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="54" type="GuiResourceData"/>
 <property name="FileSetPanel_0_CRITICAL_WARNING" value="5" type="GuiResourceData"/>
 <property name="FileSetPanel_0_WARNING" value="2" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="548" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="567" type="GuiResourceData"/>
 <property name="FloatingTopDialog_SELECT_TOP_MODULE_OF_YOUR_DESIGN" value="2" type="GuiResourceData"/>
 <property name="FloatingTopDialog_SPECIFY_NEW_TOP_MODULE" value="1" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="171" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="172" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_FIT" value="169" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_IN" value="1" type="GuiResourceData"/>
@@ -100,14 +100,14 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ProgressDialog_CANCEL" value="7" type="GuiResourceData"/>
 <property name="ProjectNameChooser_CHOOSE_PROJECT_LOCATION" value="1" type="GuiResourceData"/>
 <property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiResourceData"/>
-<property name="RDICommands_DELETE" value="16" type="GuiResourceData"/>
+<property name="RDICommands_DELETE" value="17" type="GuiResourceData"/>
 <property name="RDICommands_UNSELECT_ALL" value="1" type="GuiResourceData"/>
 <property name="RDIViews_WAVEFORM_VIEWER" value="2019" type="GuiResourceData"/>
 <property name="RunGadget_SHOW_ERROR" value="4" type="GuiResourceData"/>
 <property name="RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES" value="3" type="GuiResourceData"/>
 <property name="RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES" value="5" type="GuiResourceData"/>
 <property name="SelectTopModuleDialog_SELECT_TOP_MODULE" value="3" type="GuiResourceData"/>
-<property name="SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY" value="34" type="GuiResourceData"/>
+<property name="SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY" value="36" type="GuiResourceData"/>
 <property name="SimpleOutputProductDialog_OUTPUT_PRODUCT_TREE" value="2" type="GuiResourceData"/>
 <property name="SimulationForceSettingsDialog_FORCE_VALUE" value="28" type="GuiResourceData"/>
 <property name="SimulationForceSettingsDialog_STARTING_AFTER_TIME_OFFSET" value="7" type="GuiResourceData"/>
@@ -117,10 +117,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE" value="150" type="GuiResourceData"/>
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="16" type="GuiResourceData"/>
 <property name="SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE" value="16" type="GuiResourceData"/>
-<property name="SrcMenu_IP_DOCUMENTATION" value="2" type="GuiResourceData"/>
+<property name="SrcMenu_IP_DOCUMENTATION" value="3" type="GuiResourceData"/>
 <property name="SrcMenu_IP_HIERARCHY" value="23" type="GuiResourceData"/>
 <property name="SrcMenu_OPEN_SELECTED_SOURCE_FILES" value="1" type="GuiResourceData"/>
-<property name="StaleMoreAction_OUT_OF_DATE_DETAILS" value="1" type="GuiResourceData"/>
+<property name="StaleMoreAction_OUT_OF_DATE_DETAILS" value="3" type="GuiResourceData"/>
 <property name="StaleRunDialog_NO" value="1" type="GuiResourceData"/>
 <property name="StateMonitor_CANCEL" value="1" type="GuiResourceData"/>
 <property name="TaskBanner_CLOSE" value="8" type="GuiResourceData"/>
