@@ -10,6 +10,7 @@ vmap xpm msim/xpm
 vmap blk_mem_gen_v8_3_5 msim/blk_mem_gen_v8_3_5
 
 vlog -work xil_defaultlib -64 -sv \
+"E:/Softwares/Vivado/Vivado/2016.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 "E:/Softwares/Vivado/Vivado/2016.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -64 -93 \
@@ -20,7 +21,6 @@ vlog -work blk_mem_gen_v8_3_5 -64 \
 
 vlog -work xil_defaultlib -64 \
 "../../../../Design/IP_Core/ROM/ROM/sim/ROM.v" \
-
 
 vlog -work xil_defaultlib "glbl.v"
 

@@ -2,136 +2,152 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Thu Nov 23 15:11:43 2017
-# Process ID: 11508
+# Start of session at: Sat Nov 25 22:29:16 2017
+# Process ID: 8264
 # Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3008 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7492 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
 # Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/vivado.log
 # Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr
-set_property -dict [list CONFIG.implementation_options {radix_2_burst_io} CONFIG.target_data_throughput {100} CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {0}] [get_ips FFT]
-add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v
-reset_run FFT_synth_1
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+set_property IOSTANDARD LVTTL [get_ports [list {AD[13]} {AD[12]} {AD[11]} {AD[10]} {AD[9]} {AD[8]} {AD[7]} {AD[6]} {AD[5]} {AD[4]} {AD[3]} {AD[2]} {AD[1]} {AD[0]}]]
+set_property IOSTANDARD LVTTL [get_ports [list ad_clk clk]]
+close_design
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.3 -module_name PLL -dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.PRIM_IN_FREQ {50.000} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {18} CONFIG.MMCM_CLKIN1_PERIOD {20.0} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} CONFIG.CLKOUT1_JITTER {175.200} CONFIG.CLKOUT1_PHASE_ERROR {161.614}] [get_ips PLL]
+generate_target {instantiation_template} [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xci]
+generate_target all [get_files  e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xci]
+catch { config_ip_cache -export [get_ips -all PLL] }
+export_ip_user_files -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xci]
+launch_runs -jobs 4 PLL_synth_1
+export_simulation -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
-set_property -dict [list CONFIG.implementation_options {radix_2_burst_io} CONFIG.target_data_throughput {100} CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {0}] [get_ips FFT]
-remove_files  -fileset FFT E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci
-file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ip/FFT E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts/FFT
-create_ip -name xfft -vendor xilinx.com -library ip -version 9.0 -module_name FFT -dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT
-set_property -dict [list CONFIG.target_clock_frequency {100} CONFIG.implementation_options {radix_2_burst_io} CONFIG.target_data_throughput {100} CONFIG.input_width {14} CONFIG.scaling_options {unscaled} CONFIG.xk_index {true} CONFIG.output_ordering {natural_order} CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {0}] [get_ips FFT]
-generate_target {instantiation_template} [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci]
-generate_target all [get_files  e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci]
-catch { config_ip_cache -export [get_ips -all FFT] }
-export_ip_user_files -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci]
-launch_runs -jobs 4 FFT_synth_1
-export_simulation -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-remove_files  -fileset RAM E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/RAM/RAM/RAM.xci
-file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ip/RAM E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts/RAM
-create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.1 -module_name FIFO -dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO
-set_property -dict [list CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Input_Data_Width {14} CONFIG.Reset_Pin {false} CONFIG.Output_Data_Width {14} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Use_Dout_Reset {false} CONFIG.Full_Threshold_Assert_Value {1021} CONFIG.Full_Threshold_Negate_Value {1020}] [get_ips FIFO]
-generate_target {instantiation_template} [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci]
-generate_target all [get_files  e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci]
-catch { config_ip_cache -export [get_ips -all FIFO] }
-export_ip_user_files -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci]
-launch_runs -jobs 4 FIFO_synth_1
-export_simulation -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property -dict [list CONFIG.Valid_Flag {false} CONFIG.Write_Acknowledge_Flag {false} CONFIG.Write_Data_Count {true} CONFIG.Read_Data_Count {true}] [get_ips FIFO]
-generate_target all [get_files  e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci]
-catch { config_ip_cache -export [get_ips -all FIFO] }
-export_ip_user_files -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci] -no_script -sync -force -quiet
-reset_run FIFO_synth_1
-launch_runs -jobs 4 FIFO_synth_1
-export_simulation -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_uart.v
-add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_uart [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top uart_tx [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-launch_simulation
-launch_simulation
-launch_simulation
-source tb_uart.tcl
-run 100 us
-restart
-add_wave {{/tb_uart/uart_tx_inst/clk}} {{/tb_uart/uart_tx_inst/data}} {{/tb_uart/uart_tx_inst/uart_en}} {{/tb_uart/uart_tx_inst/tx}} {{/tb_uart/uart_tx_inst/cnt}} {{/tb_uart/uart_tx_inst/clk_bps}} {{/tb_uart/uart_tx_inst/uart_tx}} {{/tb_uart/uart_tx_inst/flag}} {{/tb_uart/uart_tx_inst/num}} {{/tb_uart/uart_tx_inst/tx_data}} {{/tb_uart/uart_tx_inst/num_r}} {{/tb_uart/uart_tx_inst/BPS}} {{/tb_uart/uart_tx_inst/BPS_2}} 
-run 50 us
-run 50 us
-run 50 us
-run 50 us
-run 50 us
-run 50 us
-run 1 ms
-relaunch_sim
-run 1 ms
-relaunch_sim
-relaunch_sim
-run 1 ms
-restart
-add_wave {{/tb_uart/uart_tx_inst/clk}} {{/tb_uart/uart_tx_inst/data}} {{/tb_uart/uart_tx_inst/uart_en}} {{/tb_uart/uart_tx_inst/tx}} {{/tb_uart/uart_tx_inst/cnt}} {{/tb_uart/uart_tx_inst/clk_bps}} {{/tb_uart/uart_tx_inst/uart_tx}} {{/tb_uart/uart_tx_inst/num}} {{/tb_uart/uart_tx_inst/tx_data}} {{/tb_uart/uart_tx_inst/flag}} {{/tb_uart/uart_tx_inst/flag_r1}} {{/tb_uart/uart_tx_inst/flag_r2}} {{/tb_uart/uart_tx_inst/flag_nege}} {{/tb_uart/uart_tx_inst/num_r}} {{/tb_uart/uart_tx_inst/BPS}} {{/tb_uart/uart_tx_inst/BPS_2}} 
-run 1 ms
-relaunch_sim
-run 1 ms
-relaunch_sim
-run 1 ms
-relaunch_sim
-run 1 ms
-relaunch_sim
-run 1 ms
-relaunch_sim
-relaunch_sim
-run 1 ms
-restart
-add_wave {{/tb_uart/uart_tx_inst/clk}} {{/tb_uart/uart_tx_inst/data}} {{/tb_uart/uart_tx_inst/uart_en}} {{/tb_uart/uart_tx_inst/wr_clk}} {{/tb_uart/uart_tx_inst/tx}} {{/tb_uart/uart_tx_inst/cnt}} {{/tb_uart/uart_tx_inst/clk_bps}} {{/tb_uart/uart_tx_inst/uart_tx}} {{/tb_uart/uart_tx_inst/num}} {{/tb_uart/uart_tx_inst/tx_data}} {{/tb_uart/uart_tx_inst/flag}} {{/tb_uart/uart_tx_inst/flag_r1}} {{/tb_uart/uart_tx_inst/flag_r2}} {{/tb_uart/uart_tx_inst/flag_nege}} {{/tb_uart/uart_tx_inst/num_r}} {{/tb_uart/uart_tx_inst/wr_clk_r0}} {{/tb_uart/uart_tx_inst/wr_clk_r1}} {{/tb_uart/uart_tx_inst/wr_clk_r2}} {{/tb_uart/uart_tx_inst/BPS}} {{/tb_uart/uart_tx_inst/BPS_2}} 
-run 1 ms
-run 1 ms
-relaunch_sim
-run 1 ms
-run 1 ms
-run 1 ms
-relaunch_sim
-run 1 ms
-run 1 ms
-run 1 ms
-relaunch_sim
-run 1 ms
-run 1 ms
-run 1 ms
-run 1 ms
-close_sim
-set_property -dict [list CONFIG.Input_Data_Width {32} CONFIG.Output_Data_Width {32}] [get_ips FIFO]
-generate_target all [get_files  e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci]
-catch { config_ip_cache -export [get_ips -all FIFO] }
-export_ip_user_files -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci] -no_script -sync -force -quiet
-reset_run FIFO_synth_1
-launch_runs -jobs 4 FIFO_synth_1
-export_simulation -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-add_files -norecurse {E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/AD.v E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v}
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top TOP [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-remove_files  -fileset sim_1 E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_uart.v
-update_compile_order -fileset sim_1
+remove_files  -fileset ADD E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ADD/ADD/ADD.xci
+file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ip/ADD E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts/ADD
+remove_files  -fileset ROM E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci
+file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ip/ROM E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts/ROM
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
 launch_runs impl_1 -jobs 4
 wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVTTL [get_ports [list {AD[13]} {AD[12]} {AD[11]} {AD[10]} {AD[9]} {AD[8]} {AD[7]} {AD[6]} {AD[5]} {AD[4]} {AD[3]} {AD[2]} {AD[1]} {AD[0]}]]
+set_property IOSTANDARD LVTTL [get_ports [list ad_clk]]
+set_property IOSTANDARD LVTTL [get_ports [list clk]]
+set_property IOSTANDARD LVTTL [get_ports [list DRY]]
+set_property IOSTANDARD LVTTL [get_ports [list ovr_in]]
+set_property IOSTANDARD LVTTL [get_ports [list rx_ready]]
+set_property IOSTANDARD LVTTL [get_ports [list tx]]
+set_property IOSTANDARD LVTTL [get_ports [list tx_ready]]
+file mkdir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1
+file mkdir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1/new
+close [ open E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1/new/TOP.xdc w ]
+add_files -fileset constrs_1 E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1/new/TOP.xdc
+write_xdc E:/Workspace/Vivado_16.4/2017_11_5_FFT/impl_1.xdc -mode port -force
+place_ports ad_clk F3
+place_ports DRY F4
+place_ports ovr_in M4
+place_ports rx_ready A7
+place_ports tx B6
+place_ports tx_ready B7
+place_ports {AD[0]} L4
+place_ports {AD[1]} K3
+place_ports {AD[2]} J3
+place_ports {AD[3]} H3
+place_ports {AD[4]} H4
+place_ports {AD[5]} H5
+place_ports {AD[6]} L2
+place_ports {AD[7]} L3
+place_ports {AD[8]} J1
+place_ports {AD[9]} K1
+place_ports {AD[10]} H1
+place_ports {AD[11]} H2
+place_ports {AD[12]} G1
+place_ports {AD[13]} G2
+write_xdc E:/Workspace/Vivado_16.4/2017_11_5_FFT/impl_1.xdc -mode port -force
+place_ports clk N11
+set_property target_constrs_file E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1/new/TOP.xdc [current_fileset -constrset]
+save_constraints -force
+save_constraints -force
+save_constraints -force
+save_constraints_as constrs_2
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+delete_fileset constrs_1
+file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1
 reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
 launch_runs impl_1 -jobs 4
 wait_on_run impl_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run synth_1 -name synth_1
+close_design
+open_run synth_1 -name synth_1
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 32768 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list PLL_inst0/inst/clk_out1 ]]
+set_property port_width 14 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {AD_inst1/ad_reg2[0]} {AD_inst1/ad_reg2[1]} {AD_inst1/ad_reg2[2]} {AD_inst1/ad_reg2[3]} {AD_inst1/ad_reg2[4]} {AD_inst1/ad_reg2[5]} {AD_inst1/ad_reg2[6]} {AD_inst1/ad_reg2[7]} {AD_inst1/ad_reg2[8]} {AD_inst1/ad_reg2[9]} {AD_inst1/ad_reg2[10]} {AD_inst1/ad_reg2[11]} {AD_inst1/ad_reg2[12]} {AD_inst1/ad_reg2[13]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 28 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {FIFO_Control_inst3/data_uart[0]} {FIFO_Control_inst3/data_uart[1]} {FIFO_Control_inst3/data_uart[2]} {FIFO_Control_inst3/data_uart[4]} {FIFO_Control_inst3/data_uart[5]} {FIFO_Control_inst3/data_uart[6]} {FIFO_Control_inst3/data_uart[7]} {FIFO_Control_inst3/data_uart[8]} {FIFO_Control_inst3/data_uart[9]} {FIFO_Control_inst3/data_uart[10]} {FIFO_Control_inst3/data_uart[12]} {FIFO_Control_inst3/data_uart[13]} {FIFO_Control_inst3/data_uart[14]} {FIFO_Control_inst3/data_uart[15]} {FIFO_Control_inst3/data_uart[16]} {FIFO_Control_inst3/data_uart[17]} {FIFO_Control_inst3/data_uart[18]} {FIFO_Control_inst3/data_uart[20]} {FIFO_Control_inst3/data_uart[21]} {FIFO_Control_inst3/data_uart[22]} {FIFO_Control_inst3/data_uart[23]} {FIFO_Control_inst3/data_uart[24]} {FIFO_Control_inst3/data_uart[25]} {FIFO_Control_inst3/data_uart[26]} {FIFO_Control_inst3/data_uart[28]} {FIFO_Control_inst3/data_uart[29]} {FIFO_Control_inst3/data_uart[30]} {FIFO_Control_inst3/data_uart[31]} ]]
+current_design impl_1
+current_design synth_1
+save_constraints
+current_design impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+current_design impl_1
+close_design
+close_design
+open_run synth_1 -name synth_1
+close_design
+add_files -norecurse {E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ADD/ADD/ADD.xci}
+export_ip_user_files -of_objects  [get_files  {E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ADD/ADD/ADD.xci}] -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -force -quiet
+add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v
+remove_files  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ADD/ADD/ADD.xci
+file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ip/ADD E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts/ADD
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
