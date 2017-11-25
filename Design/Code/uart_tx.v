@@ -2,7 +2,7 @@ module uart_tx(
 	input	clk,
 	input	[31:0]	data,
 	input	uart_en,
-	output	wr_clk,
+	output	rd_clk,
 	output	tx
 );
 
@@ -112,22 +112,22 @@ end
 //----------------------------------------------------------------------------------------//
 reg		[2:0]	num_r = 0;
 //==============================//
-reg	wr_clk_r0 = 1'b0;			
-reg	wr_clk_r1 = 1'b0;
-reg	wr_clk_r2 = 1'b0;
+reg	rd_clk_r0 = 1'b0;			
+reg	rd_clk_r1 = 1'b0;
+reg	rd_clk_r2 = 1'b0;
 always @ (posedge clk)
 begin
 	if(num_r < 3'd5)
-		wr_clk_r0 <= 1'b0;
+		rd_clk_r0 <= 1'b0;
 	else
-		wr_clk_r0 <= 1'b1;
+		rd_clk_r0 <= 1'b1;
 end
 always @ (posedge clk)
 begin
-	wr_clk_r1 <= wr_clk_r0;
-	wr_clk_r2 <= wr_clk_r1;
+	rd_clk_r1 <= rd_clk_r0;
+	rd_clk_r2 <= rd_clk_r1;
 end
-assign	wr_clk = ~wr_clk_r1 & wr_clk_r2;		//检测下降沿
+assign	rd_clk = ~rd_clk_r1 & rd_clk_r2;		//检测下降沿
 //==============================//
 
 always @(posedge clk) begin

@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-// Date        : Fri Nov 24 02:46:04 2017
+// Date        : Sat Nov 25 17:23:50 2017
 // Host        : DESKTOP-JC6NIF0 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO_stub.v
@@ -16,13 +16,13 @@
 (* x_core_info = "fifo_generator_v13_1_3,Vivado 2016.4" *)
 module FIFO(wr_clk, rd_clk, din, wr_en, rd_en, dout, full, empty, 
   rd_data_count, wr_data_count)
-/* synthesis syn_black_box black_box_pad_pin="wr_clk,rd_clk,din[13:0],wr_en,rd_en,dout[13:0],full,empty,rd_data_count[9:0],wr_data_count[9:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="wr_clk,rd_clk,din[31:0],wr_en,rd_en,dout[31:0],full,empty,rd_data_count[9:0],wr_data_count[9:0]" */;
   input wr_clk;
   input rd_clk;
-  input [13:0]din;
+  input [31:0]din;
   input wr_en;
   input rd_en;
-  output [13:0]dout;
+  output [31:0]dout;
   output full;
   output empty;
   output [9:0]rd_data_count;

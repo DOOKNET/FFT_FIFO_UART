@@ -1,0 +1,338 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date             : Sat Nov 25 21:48:52 2017
+| Host             : DESKTOP-JC6NIF0 running 64-bit major release  (build 9200)
+| Command          : report_power -file TOP_power_routed.rpt -pb TOP_power_summary_routed.pb -rpx TOP_power_routed.rpx
+| Design           : TOP
+| Device           : xc7a35tftg256-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 12.683 (Junction temp exceeded!) |
+| Dynamic (W)              | 12.500                           |
+| Device Static (W)        | 0.182                            |
+| Effective TJA (C/W)      | 4.9                              |
+| Max Ambient (C)          | 23.4                             |
+| Junction Temperature (C) | 86.6                             |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic             |     3.059 |     2525 |       --- |             --- |
+|   LUT as Logic          |     2.266 |      605 |     20800 |            2.91 |
+|   Register              |     0.416 |     1270 |     41600 |            3.05 |
+|   CARRY4                |     0.211 |       55 |      8150 |            0.67 |
+|   LUT as Shift Register |     0.152 |      108 |      9600 |            1.13 |
+|   F7/F8 Muxes           |     0.009 |       25 |     32600 |            0.08 |
+|   BUFG                  |     0.006 |        2 |        32 |            6.25 |
+|   Others                |     0.000 |      239 |       --- |             --- |
+| Signals                 |     4.574 |     1731 |       --- |             --- |
+| Block RAM               |     0.559 |      3.5 |        50 |            7.00 |
+| DSPs                    |     3.770 |        4 |        90 |            4.44 |
+| I/O                     |     0.539 |       19 |       170 |           11.18 |
+| Static Power            |     0.182 |          |           |                 |
+| Total                   |    12.683 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |    12.102 |      12.001 |      0.100 |
+| Vccaux    |       1.800 |     0.062 |       0.039 |      0.023 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.226 |       0.225 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.027 |       0.024 |      0.003 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------------------------------------------------------------------------------+-----------+
+| Name                                                                                                  | Power (W) |
++-------------------------------------------------------------------------------------------------------+-----------+
+| TOP                                                                                                   |    12.500 |
+|   AD_inst0                                                                                            |     0.059 |
+|   FFT_Control_inst1                                                                                   |    11.132 |
+|     FFT_inst0                                                                                         |    11.132 |
+|       U0                                                                                              |    11.132 |
+|         i_synth                                                                                       |    11.132 |
+|           axi_wrapper                                                                                 |     0.589 |
+|             config_channel_fifo                                                                       |     0.048 |
+|               gen_non_real_time.data_in_fifo_pt1                                                      |     0.048 |
+|                 fifo0                                                                                 |     0.047 |
+|             data_in_channel_fifo                                                                      |     0.234 |
+|               gen_non_real_time.data_in_fifo_pt1                                                      |     0.230 |
+|                 fifo0                                                                                 |     0.179 |
+|             data_out_channel                                                                          |     0.200 |
+|               gen_non_real_time.fifo                                                                  |     0.196 |
+|                 fifo0                                                                                 |     0.196 |
+|           xfft_inst                                                                                   |    10.543 |
+|             non_floating_point.arch_c.xfft_inst                                                       |    10.543 |
+|               control                                                                                 |     1.864 |
+|                 cntrl                                                                                 |     0.186 |
+|                   has_unloading.unloading_state                                                       |    <0.001 |
+|                   loading_state                                                                       |     0.001 |
+|                   pe_cnt                                                                              |     0.019 |
+|                     cnt_async                                                                         |     0.006 |
+|                       i_baseblox.i_baseblox_addsub                                                    |     0.006 |
+|                         no_pipelining.the_addsub                                                      |     0.006 |
+|                           i_lut6.i_lut6_addsub                                                        |     0.006 |
+|                     threshold                                                                         |     0.002 |
+|                   processing_state                                                                    |     0.003 |
+|                   rank_0_cnt                                                                          |     0.008 |
+|                     cnt_async                                                                         |     0.004 |
+|                       i_baseblox.i_baseblox_addsub                                                    |     0.004 |
+|                         no_pipelining.the_addsub                                                      |     0.004 |
+|                           i_lut6.i_lut6_addsub                                                        |     0.004 |
+|                     threshold                                                                         |    <0.001 |
+|                   rn_0_cnt                                                                            |     0.030 |
+|                     cnt_async                                                                         |     0.007 |
+|                       i_baseblox.i_baseblox_addsub                                                    |     0.007 |
+|                         no_pipelining.the_addsub                                                      |     0.007 |
+|                           i_lut6.i_lut6_addsub                                                        |     0.007 |
+|                     threshold                                                                         |     0.003 |
+|                   same_input_output_order.inon.no_cyclic_prefix.xk_index_counter                      |     0.044 |
+|                     cnt_async                                                                         |     0.008 |
+|                       i_baseblox.i_baseblox_addsub                                                    |     0.008 |
+|                         no_pipelining.the_addsub                                                      |     0.008 |
+|                           i_lut6.i_lut6_addsub                                                        |     0.008 |
+|                     threshold                                                                         |     0.006 |
+|                   same_input_output_order.inon.xn_index_counter                                       |     0.051 |
+|                     cnt_async                                                                         |     0.008 |
+|                       i_baseblox.i_baseblox_addsub                                                    |     0.008 |
+|                         no_pipelining.the_addsub                                                      |     0.008 |
+|                           i_lut6.i_lut6_addsub                                                        |     0.008 |
+|                     threshold                                                                         |     0.006 |
+|                 delay_line2_for_rfd                                                                   |     0.001 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram            |     0.001 |
+|                     i_bb_inst                                                                         |     0.001 |
+|                 delay_line_for_dv3                                                                    |     0.004 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram            |     0.002 |
+|                     i_bb_inst                                                                         |     0.002 |
+|                       gen_output_regs.output_regs                                                     |     0.002 |
+|                 delay_line_for_i_sw_control_0                                                         |     0.037 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram            |     0.037 |
+|                     i_bb_inst                                                                         |     0.037 |
+|                 delay_line_for_i_sw_control_1                                                         |     0.035 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram            |     0.035 |
+|                     i_bb_inst                                                                         |     0.035 |
+|                 delay_line_for_inp_add                                                                |     0.034 |
+|                 delay_line_for_ld_start                                                               |    <0.001 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram            |    <0.001 |
+|                     i_bb_inst                                                                         |    <0.001 |
+|                 delay_line_for_o_sw_control0                                                          |     0.034 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram            |     0.034 |
+|                     i_bb_inst                                                                         |     0.034 |
+|                 delay_line_for_o_sw_control1                                                          |     0.032 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram            |     0.032 |
+|                     i_bb_inst                                                                         |     0.032 |
+|                 delay_line_for_rd_addr_mux_control                                                    |    <0.001 |
+|                 delay_line_for_twiddle_rank                                                           |     0.047 |
+|                 delay_line_for_twiddle_rn                                                             |     0.034 |
+|                 delay_line_for_we_process                                                             |     0.004 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram            |    <0.001 |
+|                     i_bb_inst                                                                         |    <0.001 |
+|                 delay_line_for_wr_addr_0                                                              |     0.037 |
+|                 delay_line_for_wr_addr_1                                                              |     0.035 |
+|                 io_address_gen                                                                        |     0.104 |
+|                   mem1_we                                                                             |     0.028 |
+|                   with_addr_mux.addr_mux                                                              |     0.060 |
+|                 out_mux_control_delay                                                                 |     0.020 |
+|                 out_mux_sel                                                                           |     0.023 |
+|                 processing_address_generator                                                          |     0.329 |
+|                   addr0_gen[0].a0.addr0_index                                                         |     0.012 |
+|                   addr0_gen[1].a0.addr0_index                                                         |     0.013 |
+|                   addr0_gen[2].a0.addr0_index                                                         |     0.013 |
+|                   addr0_gen[3].a0.addr0_index                                                         |     0.015 |
+|                   addr0_gen[4].a0.addr0_index                                                         |     0.013 |
+|                   addr0_gen[5].a0.addr0_index                                                         |     0.011 |
+|                   addr0_gen[6].a0.addr0_index                                                         |     0.013 |
+|                   addr0_gen[7].a0.addr0_index                                                         |     0.011 |
+|                   addr0_gen[8].a0.addr0_index                                                         |     0.010 |
+|                   addr1_gen[0].a1.addr1_index                                                         |     0.010 |
+|                   addr1_gen[1].a1.addr1_index                                                         |     0.012 |
+|                   addr1_gen[2].a1.addr1_index                                                         |     0.013 |
+|                   addr1_gen[3].a1.addr1_index                                                         |     0.013 |
+|                   addr1_gen[4].a1.addr1_index                                                         |     0.012 |
+|                   addr1_gen[5].a1.addr1_index                                                         |     0.014 |
+|                   addr1_gen[6].a1.addr1_index                                                         |     0.015 |
+|                   addr1_gen[7].a1.addr1_index                                                         |     0.011 |
+|                   addr1_gen[8].a1.addr1_index                                                         |     0.009 |
+|                   xor_rn                                                                              |     0.031 |
+|                 read_addr_mux0                                                                        |     0.069 |
+|                 read_addr_mux1                                                                        |     0.073 |
+|                 twiddle_address_generator                                                             |     0.126 |
+|                   n1024.mux10                                                                         |     0.126 |
+|                 twiddle_generator                                                                     |     0.456 |
+|                   tw0.twgen0                                                                          |     0.456 |
+|                 write_addr_mux0                                                                       |     0.050 |
+|                 write_addr_mux1                                                                       |     0.058 |
+|               single_channel.datapath                                                                 |     8.678 |
+|                 blkmem_gen.use_bram_only.dpm0                                                         |     0.491 |
+|                 blkmem_gen.use_bram_only.dpm1                                                         |     0.471 |
+|                 i_switch_im0                                                                          |     0.168 |
+|                 i_switch_im1                                                                          |     0.258 |
+|                 i_switch_re0                                                                          |     0.179 |
+|                 i_switch_re1                                                                          |     0.254 |
+|                 input_delay_im                                                                        |     0.000 |
+|                 input_delay_re                                                                        |     0.011 |
+|                 output_selector_re                                                                    |     0.196 |
+|                 pe                                                                                    |     5.876 |
+|                   btrfly                                                                              |     1.147 |
+|                     logic_butterfly.add_i                                                             |     0.296 |
+|                       adder                                                                           |     0.296 |
+|                         i_baseblox.i_baseblox_addsub                                                  |     0.296 |
+|                           no_pipelining.the_addsub                                                    |     0.296 |
+|                             i_lut6.i_lut6_addsub                                                      |     0.296 |
+|                               i_q.i_simple.qreg                                                       |     0.135 |
+|                     logic_butterfly.add_r                                                             |     0.273 |
+|                       adder                                                                           |     0.273 |
+|                         i_baseblox.i_baseblox_addsub                                                  |     0.273 |
+|                           no_pipelining.the_addsub                                                    |     0.273 |
+|                             i_lut6.i_lut6_addsub                                                      |     0.273 |
+|                               i_q.i_simple.qreg                                                       |     0.117 |
+|                     logic_butterfly.sub_i                                                             |     0.282 |
+|                       subtracter                                                                      |     0.282 |
+|                         i_baseblox.i_baseblox_addsub                                                  |     0.282 |
+|                           no_pipelining.the_addsub                                                    |     0.282 |
+|                             i_lut6.i_lut6_addsub                                                      |     0.282 |
+|                               i_q.i_simple.qreg                                                       |     0.114 |
+|                     logic_butterfly.sub_r                                                             |     0.296 |
+|                       subtracter                                                                      |     0.296 |
+|                         i_baseblox.i_baseblox_addsub                                                  |     0.296 |
+|                           no_pipelining.the_addsub                                                    |     0.296 |
+|                             i_lut6.i_lut6_addsub                                                      |     0.296 |
+|                               i_q.i_simple.qreg                                                       |     0.131 |
+|                   cmplx_mult                                                                          |     4.158 |
+|                     i_cmpy                                                                            |     4.158 |
+|                       four_mult_structure.use_dsp.i_dsp                                               |     4.158 |
+|                         re_im                                                                         |     4.158 |
+|                           use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0 |     0.000 |
+|                           use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1 |     0.000 |
+|                   pipeline_balancer_im                                                                |     0.088 |
+|                   pipeline_balancer_re                                                                |     0.115 |
+|                 write_data_mux_im0                                                                    |     0.178 |
+|                 write_data_mux_im1                                                                    |     0.191 |
+|                 write_data_mux_re0                                                                    |     0.192 |
+|                 write_data_mux_re1                                                                    |     0.212 |
+|   FIFO_Control_inst2                                                                                  |     0.516 |
+|     FIFO_inst0                                                                                        |     0.502 |
+|       U0                                                                                              |     0.502 |
+|         inst_fifo_gen                                                                                 |     0.502 |
+|           gconvfifo.rf                                                                                |     0.502 |
+|             grf.rf                                                                                    |     0.502 |
+|               gntv_or_sync_fifo.gcx.clkx                                                              |     0.194 |
+|                 gnxpm_cdc.gsync_stage[1].rd_stg_inst                                                  |     0.013 |
+|                 gnxpm_cdc.gsync_stage[1].wr_stg_inst                                                  |     0.004 |
+|                 gnxpm_cdc.gsync_stage[2].rd_stg_inst                                                  |     0.056 |
+|                 gnxpm_cdc.gsync_stage[2].wr_stg_inst                                                  |     0.012 |
+|               gntv_or_sync_fifo.gl0.rd                                                                |     0.003 |
+|                 gras.rsts                                                                             |    <0.001 |
+|                   c0                                                                                  |    <0.001 |
+|                   c1                                                                                  |    <0.001 |
+|                 rpntr                                                                                 |     0.003 |
+|               gntv_or_sync_fifo.gl0.wr                                                                |     0.206 |
+|                 gwas.wsts                                                                             |     0.004 |
+|                   c1                                                                                  |    <0.001 |
+|                   c2                                                                                  |    <0.001 |
+|                 wpntr                                                                                 |     0.203 |
+|               gntv_or_sync_fifo.mem                                                                   |     0.098 |
+|                 gbm.gbmg.gbmga.ngecc.bmg                                                              |     0.098 |
+|                   inst_blk_mem_gen                                                                    |     0.098 |
+|                     gnbram.gnativebmg.native_blk_mem_gen                                              |     0.098 |
+|                       valid.cstr                                                                      |     0.098 |
+|                         ramloop[0].ram.r                                                              |     0.098 |
+|                           prim_noinit.ram                                                             |     0.098 |
+|   uart_tx_inst3                                                                                       |     0.151 |
++-------------------------------------------------------------------------------------------------------+-----------+
+
+

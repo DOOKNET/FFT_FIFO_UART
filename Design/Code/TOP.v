@@ -6,7 +6,7 @@ module	TOP(
     input   rx_ready,           //单片机拉高时，FIFO开始工作
     output  tx_ready,           //拉低时，单片机才能准备接收数据(只检测一次)
 	output	ad_clk,
-    output  tx,
+    output  tx
 );
 
 wire    [13:0]  s_axis_data_tdata;      //输入处理的数据
@@ -18,7 +18,8 @@ wire    m_axis_data_tvalid;             //输出数据有效信号
 wire    [15:0]  m_axis_data_tuser;      //输出数据计数
 
 wire    uart_en;                        //串口使能信号
-wire    [13:0]  data_uart;
+wire    rd_clk;                         //FIFO读信号
+wire    [31:0]  data_uart;
 
 wire	ovr_out;
 assign	ad_clk = clk;
@@ -57,9 +58,19 @@ FIFO_Control        FIFO_Control_inst2(
 	.data_out       (data_uart)
 );
 //-----------------------------------------//
-
-
-
+uart_tx         uart_tx_inst3(
+	.clk        (clk),
+	.data       (data_uart),
+	.uart_en    (uart_en),
+	.rd_clk     (rd_clk),
+	.tx         (tx)
+);
 //-----------------------------------------//
+
+
+
+
+
+
 
 endmodule 

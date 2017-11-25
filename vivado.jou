@@ -111,3 +111,27 @@ run 1 ms
 run 1 ms
 run 1 ms
 run 1 ms
+close_sim
+set_property -dict [list CONFIG.Input_Data_Width {32} CONFIG.Output_Data_Width {32}] [get_ips FIFO]
+generate_target all [get_files  e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci]
+catch { config_ip_cache -export [get_ips -all FIFO] }
+export_ip_user_files -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci] -no_script -sync -force -quiet
+reset_run FIFO_synth_1
+launch_runs -jobs 4 FIFO_synth_1
+export_simulation -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse {E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/AD.v E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TOP [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+remove_files  -fileset sim_1 E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_uart.v
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1

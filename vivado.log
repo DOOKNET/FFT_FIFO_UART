@@ -690,3 +690,39 @@ run 1 ms
 run 1 ms
 run 1 ms
 run 1 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -dict [list CONFIG.Input_Data_Width {32} CONFIG.Output_Data_Width {32}] [get_ips FIFO]
+generate_target all [get_files  e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'FIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'FIFO'...
+catch { config_ip_cache -export [get_ips -all FIFO] }
+export_ip_user_files -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci] -no_script -sync -force -quiet
+reset_run FIFO_synth_1
+launch_runs -jobs 4 FIFO_synth_1
+[Sat Nov 25 17:21:56 2017] Launched FIFO_synth_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/FIFO_synth_1/runme.log
+export_simulation -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse {E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/AD.v E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v}
+WARNING: [filemgmt 56-12] File 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v' cannot be added to the project because it already exists in the project, skipping this file
+set_property top TOP [current_fileset]
+remove_files  -fileset sim_1 E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_uart.v
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library work [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:1]
+[Sat Nov 25 18:22:00 2017] Launched synth_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Nov 25 21:08:14 2017] Launched impl_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Sat Nov 25 21:46:06 2017] Launched synth_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/runme.log
+[Sat Nov 25 21:46:06 2017] Launched impl_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 25 21:49:42 2017...

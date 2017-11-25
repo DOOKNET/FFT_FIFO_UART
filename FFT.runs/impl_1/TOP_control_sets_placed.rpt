@@ -1,0 +1,89 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Sat Nov 25 21:47:59 2017
+| Host         : DESKTOP-JC6NIF0 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    74 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             244 |           60 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               9 |            3 |
+| Yes          | No                    | No                     |             992 |          190 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              25 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|        Clock Signal        |                                                               Enable Signal                                                               |                                                            Set/Reset Signal                                                            | Slice Load Count | Bel Load Count |
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/axi_wrapper/config_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                       |                                                                                                                                        |                1 |              1 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_c.xfft_inst/control/cntrl/pe_cnt/cnt_reg[3].addsub_reg_0         | FFT_Control_inst1/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_c.xfft_inst/control/cntrl/process_state_s                     |                2 |              5 |
+|  ad_clk_OBUF_BUFG          | uart_tx_inst3/tx_data1__0                                                                                                                 |                                                                                                                                        |                1 |              6 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_c.xfft_inst/control/cntrl/processing_state/ce_pedelay            |                                                                                                                                        |                3 |              7 |
+|  ad_clk_OBUF_BUFG          | uart_tx_inst3/tx_data[7]_i_1_n_0                                                                                                          |                                                                                                                                        |                2 |              8 |
+|  ad_clk_OBUF_BUFG          |                                                                                                                                           | uart_tx_inst3/cnt[9]_i_1__0_n_0                                                                                                        |                3 |              9 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_c.xfft_inst/control/cntrl/processing_state/no_early_reg.I_TC_reg | FFT_Control_inst1/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_c.xfft_inst/control/cntrl/loading_state/no_early_reg.I_TC_reg |                4 |             10 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/axi_wrapper/ce_w2c                                                                                 | FFT_Control_inst1/FFT_inst0/U0/i_synth/axi_wrapper/same_input_output_order.inon.no_cyclic_prefix.OUT_ADDR_reg[9]                       |                2 |             10 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/axi_wrapper/symbols_out_remaining[9]_i_1_n_0                                                       |                                                                                                                                        |                4 |             10 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/axi_wrapper/xk_index_counter_ce                                                                    |                                                                                                                                        |                4 |             12 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/axi_wrapper/xn_index_counter_ce                                                                    |                                                                                                                                        |                4 |             12 |
+|  ad_clk_OBUF_BUFG          | uart_tx_inst3/uart_tx0                                                                                                                    |                                                                                                                                        |                2 |             12 |
+|  uart_tx_inst3/rd_clk_BUFG | FIFO_Control_inst2/FIFO_inst0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/E[0]                                |                                                                                                                                        |                4 |             20 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_c.xfft_inst/control/delay_line_for_dv3/wr_enable                 |                                                                                                                                        |                4 |             25 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/p_8_out                        |                                                                                                                                        |                6 |             28 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/p_4_out5_out                   |                                                                                                                                        |                5 |             28 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                      |                                                                                                                                        |                4 |             28 |
+|  ad_clk_OBUF_BUFG          | FIFO_Control_inst2/FIFO_inst0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]                                |                                                                                                                                        |                7 |             30 |
+|  uart_tx_inst3/rd_clk_BUFG |                                                                                                                                           |                                                                                                                                        |               10 |             42 |
+|  ad_clk_OBUF_BUFG          |                                                                                                                                           |                                                                                                                                        |               50 |            202 |
+|  ad_clk_OBUF_BUFG          | FFT_Control_inst1/FFT_inst0/U0/i_synth/axi_wrapper/ce_w2c                                                                                 |                                                                                                                                        |              169 |            959 |
++----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 5      |                     1 |
+| 6      |                     1 |
+| 7      |                     1 |
+| 8      |                     1 |
+| 9      |                     1 |
+| 10     |                     3 |
+| 12     |                     3 |
+| 16+    |                     9 |
++--------+-----------------------+
+
+
