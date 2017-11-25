@@ -604,3 +604,89 @@ Time resolution is 1 ps
 run 1 ms
 run 1 ms
 run 1 ms
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_uart' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/ROM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/cos_14_1024_signed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_uart_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 63a46008f5d845f7b87a208ca3c1b077 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_uart_behav xil_defaultlib.tb_uart xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" Line 1. Module uart_tx doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" Line 1. Module uart_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.tb_uart
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_uart_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1184.281 ; gain = 0.000
+run 1 ms
+run 1 ms
+run 1 ms
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_uart' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/ROM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/cos_14_1024_signed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_uart_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 63a46008f5d845f7b87a208ca3c1b077 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_uart_behav xil_defaultlib.tb_uart xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" Line 1. Module uart_tx doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" Line 1. Module uart_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.tb_uart
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_uart_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
