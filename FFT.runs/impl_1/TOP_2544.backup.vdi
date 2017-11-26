@@ -1,0 +1,620 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Nov 26 09:50:09 2017
+# Process ID: 2544
+# Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1
+# Command line: vivado.exe -log TOP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP.tcl -notrace
+# Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP.vdi
+# Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp' for cell 'PLL_inst0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp' for cell 'FFT_Control_inst2/FFT_inst0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp' for cell 'FIFO_Control_inst3/FIFO_inst0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.dcp' for cell 'test_wave_inst1/ROM_inst0'
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
+Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
+Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
+Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
+Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 938.688 ; gain = 445.031
+Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
+Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
+WARNING: [Vivado 12-584] No ports matched 'AD[13]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[12]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[11]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[10]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[9]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[8]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[7]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[6]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[5]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[4]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[3]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[2]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[1]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[0]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad_clk'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DRY'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ovr_in'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ad_clk'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DRY'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ovr_in'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[0]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[1]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[2]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[3]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[4]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[5]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[6]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[7]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[8]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[9]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[10]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[11]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[12]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AD[13]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[0]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[1]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[2]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[3]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[4]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[5]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[6]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[7]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[8]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[9]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[10]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[11]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[12]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[13]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'ad_clk_OBUF'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:45]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:45]
+Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp'
+Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance rd_clk]'. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+can't read "rd_clk_period": no such variable
+CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+can't read "skew_value": no such variable
+can't read "skew_value": no such variable
+Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 938.695 ; gain = 717.875
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 938.695 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Softwares/Vivado/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:2.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:2.0", from Vivado IP cache entry "1d5c60dfe3c09b66".
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.155 . Memory (MB): peak = 1000.402 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 163d59d5d
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:04:42 . Memory (MB): peak = 1000.402 ; gain = 61.707
+Implement Debug Cores | Checksum: fc7c4e59
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 11 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1a169c882
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:04:45 . Memory (MB): peak = 1030.848 ; gain = 92.152
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-10] Eliminated 258 cells.
+Phase 3 Constant propagation | Checksum: 12d3ff724
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:04:46 . Memory (MB): peak = 1030.848 ; gain = 92.152
+
+Phase 4 Sweep
+INFO: [Opt 31-12] Eliminated 667 unconnected nets.
+INFO: [Opt 31-11] Eliminated 303 unconnected cells.
+Phase 4 Sweep | Checksum: e28202a1
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:04:47 . Memory (MB): peak = 1030.848 ; gain = 92.152
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG PLL_inst0/inst/clk_out1_PLL_BUFG_inst to drive 2 load(s) on clock net u_ila_0_clk_out1_PLL
+INFO: [Opt 31-194] Inserted BUFG uart_tx_inst4/rd_clk_BUFG_inst to drive 63 load(s) on clock net uart_tx_inst4_n_7
+INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 5 BUFG optimization | Checksum: 13220a8bb
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:04:49 . Memory (MB): peak = 1030.848 ; gain = 92.152
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1030.848 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 13220a8bb
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:04:49 . Memory (MB): peak = 1030.848 ; gain = 92.152
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 15 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 4 newly gated: 0 Total Ports: 30
+Ending PowerOpt Patch Enables Task | Checksum: 18ae41d7b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 18ae41d7b
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1311.738 ; gain = 280.891
+INFO: [Common 17-83] Releasing license: Implementation
+54 Infos, 50 Warnings, 38 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:04:57 . Memory (MB): peak = 1311.738 ; gain = 373.043
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1311.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP_drc_opted.rpt.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1311.738 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 5224a167
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: a109c66f
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: a109c66f
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: a109c66f
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1827ea6bc
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:24 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1827ea6bc
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:24 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1703d15bb
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:28 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 12468ebac
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:28 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 12468ebac
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:28 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1ca003f63
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 84dcb1b5
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 13e6d2228
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 13e6d2228
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 13e6d2228
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.679. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1d50887dc
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:37 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1d50887dc
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:37 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1d50887dc
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:38 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1d50887dc
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:38 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1b185045c
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:38 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1b185045c
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:38 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Ending Placer Task | Checksum: 11dad100a
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:38 . Memory (MB): peak = 1311.738 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+72 Infos, 50 Warnings, 38 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:41 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 1311.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1311.738 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.213 . Memory (MB): peak = 1311.738 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: fcdb7e7b ConstDB: 0 ShapeSum: 20d1918f RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 64651658
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 64651658
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:35 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 64651658
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:35 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 64651658
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:35 . Memory (MB): peak = 1311.738 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 17805dad5
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:40 . Memory (MB): peak = 1311.738 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.906  | TNS=0.000  | WHS=-0.463 | THS=-227.011|
+
+Phase 2 Router Initialization | Checksum: 1f1ef1662
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:42 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: dcac8577
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:44 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 708
+ Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 141f3c3e3
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:49 . Memory (MB): peak = 1311.738 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.549  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 166305fd2
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:50 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 1dca82e86
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:50 . Memory (MB): peak = 1311.738 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.549  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 268442072
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:51 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 268442072
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:51 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 268442072
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:51 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 268442072
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:51 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 268442072
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:51 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 27a1c01d3
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:52 . Memory (MB): peak = 1311.738 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.628  | TNS=0.000  | WHS=-0.463 | THS=-0.717 |
+
+
+Phase 6.1.2 Lut RouteThru Assignment for hold
+Phase 6.1.2 Lut RouteThru Assignment for hold | Checksum: 24f61bb62
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:52 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Phase 6.1 Hold Fix Iter | Checksum: 24f61bb62
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:52 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 6.2 Additional Hold Fix
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.628  | TNS=0.000  | WHS=-0.463 | THS=-0.717 |
+
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.628  | TNS=0.000  | WHS=-0.463 | THS=-0.717 |
+
+Phase 6.2 Additional Hold Fix | Checksum: 2b8f4e3dd
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:54 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 2b8f4e3dd
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:54 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.88121 %
+  Global Horizontal Routing Utilization  = 2.38652 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 240161fb4
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:54 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 240161fb4
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:54 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 2321399ca
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:55 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.628  | TNS=0.000  | WHS=-0.463 | THS=-0.717 |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 2321399ca
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:55 . Memory (MB): peak = 1311.738 ; gain = 0.000
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin u_ila_0/inst/ila_core_inst/shifted_data_in_reg[7][14]_srl8/D driven by global clock buffer BUFGCTRL_X0Y0.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin u_ila_0/inst/ila_core_inst/probeDelay1[0]_i_1__0/I1 driven by global clock buffer BUFGCTRL_X0Y0.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-425] Router was unable to fix hold violation on pin PLL_inst0/inst/clk_out1_PLL_BUFG_inst/I driven by PLL site PLLE2_ADV_X0Y0.
+Resolution: Run report_timing_summary to analyze the hold violations.
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:56 . Memory (MB): peak = 1311.738 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+87 Infos, 54 Warnings, 38 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:18 ; elapsed = 00:00:58 . Memory (MB): peak = 1311.738 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 1311.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP_methodology_drc_routed.rpt.
+report_methodology: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1311.738 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+Command: report_power -file TOP_power_routed.rpt -pb TOP_power_summary_routed.pb -rpx TOP_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+97 Infos, 54 Warnings, 39 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 26 09:57:51 2017...

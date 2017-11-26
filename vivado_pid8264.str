@@ -2202,3 +2202,6 @@ selectTreeTable(PAResourceEtoH.FindAndPickNetsDialog_NETS_TREE_TABLE_PANEL, "uar
 selectTreeTable(PAResourceEtoH.FindAndPickNetsDialog_NETS_TREE_TABLE_PANEL, "FFT_Control_inst2/cnt_reg__0 (11) ; FDRE", 12, "FFT_Control_inst2/cnt_reg__0 (11)", 0, true); // aS:ab (JViewport:JComponent, aK:q) - Node
 selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, aK:q)
 dismissDialog("Add Nets to Debug"); // aK:q (cd:JFrame)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.

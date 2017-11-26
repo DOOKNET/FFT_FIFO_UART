@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1511633688">
+<GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1511676739">
   <File Type="RDS-PROPCONSTRS" Name="TOP_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="TOP.tcl"/>
   <File Type="RDS-RDS" Name="TOP.vds"/>
@@ -11,6 +11,13 @@
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/Design/IP_Core/ROM/ROM/ROM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Design/Code/uart_tx.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -32,13 +39,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/Design/Code/FFT_Control.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/Design/Code/uart_tx.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

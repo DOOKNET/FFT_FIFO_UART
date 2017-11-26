@@ -1,6 +1,25 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_uart.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_wave
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT_Control
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tlast, assumed default net type wire [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v:108]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_TOP
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/sim/FFT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FFT

@@ -2,10 +2,10 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Sat Nov 25 22:29:16 2017
-# Process ID: 8264
+# Start of session at: Sun Nov 26 16:39:03 2017
+# Process ID: 852
 # Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7492 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3796 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
 # Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/vivado.log
 # Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT\vivado.jou
 #-----------------------------------------------------------
@@ -16,189 +16,8 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Softwares/Vivado/Vivado/2016.4/data/ip'.
-open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 774.133 ; gain = 116.652
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a35tftg256-1
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp' for cell 'FFT_Control_inst1/FFT_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp' for cell 'FIFO_Control_inst2/FIFO_inst0'
-INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.4
-INFO: [Device 21-403] Loading part xc7a35tftg256-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst2/FIFO_inst0/U0'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst2/FIFO_inst0/U0'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst2/FIFO_inst0/U0'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:53]
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance wr_clk]'. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:53]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:53]
-get_clocks: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1459.797 ; gain = 448.785
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance rd_clk]'. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:55]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "wr_clk_period": no such variable
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:62]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "skew_value": no such variable
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:65]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "skew_value": no such variable
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst2/FIFO_inst0/U0'
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:47 ; elapsed = 00:00:38 . Memory (MB): peak = 1545.805 ; gain = 719.949
-close_design
-open_run impl_1
-INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.4
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_early.xdc]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_early.xdc]
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_late.xdc]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_late.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.242 . Memory (MB): peak = 1545.805 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.243 . Memory (MB): peak = 1545.805 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1545.805 ; gain = 0.000
-WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
-set_property IOSTANDARD LVTTL [get_ports [list {AD[13]} {AD[12]} {AD[11]} {AD[10]} {AD[9]} {AD[8]} {AD[7]} {AD[6]} {AD[5]} {AD[4]} {AD[3]} {AD[2]} {AD[1]} {AD[0]}]]
-set_property IOSTANDARD LVTTL [get_ports [list ad_clk clk]]
-close_design
-close_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 1614.910 ; gain = 0.000
-create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.3 -module_name PLL -dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL
-set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.PRIM_IN_FREQ {50.000} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {18} CONFIG.MMCM_CLKIN1_PERIOD {20.0} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} CONFIG.CLKOUT1_JITTER {175.200} CONFIG.CLKOUT1_PHASE_ERROR {161.614}] [get_ips PLL]
-generate_target {instantiation_template} [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PLL'...
-generate_target all [get_files  e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PLL'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PLL'...
-INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'PLL'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PLL'...
-catch { config_ip_cache -export [get_ips -all PLL] }
-export_ip_user_files -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xci]
-launch_runs -jobs 4 PLL_synth_1
-[Sat Nov 25 23:30:11 2017] Launched PLL_synth_1...
-Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/PLL_synth_1/runme.log
-export_simulation -of_objects [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xci] -directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts -ip_user_files_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files -ipstatic_source_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-INFO: [HDL 9-2216] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library work [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:1]
-[Sat Nov 25 23:38:01 2017] Launched synth_1...
-Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/runme.log
-remove_files  -fileset ADD E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ADD/ADD/ADD.xci
-INFO: [Project 1-386] Moving file 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ADD/ADD/ADD.xci' from fileset 'ADD' to fileset 'sources_1'.
-file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ip/ADD E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts/ADD
-remove_files  -fileset ROM E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci
-INFO: [Project 1-386] Moving file 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci' from fileset 'ROM' to fileset 'sources_1'.
-file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ip/ROM E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts/ROM
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Sat Nov 25 23:42:21 2017] Launched synth_1...
-Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 4
-[Sun Nov 26 00:20:30 2017] Launched impl_1...
-Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.4
-INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'PLL_inst0/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/.Xil/Vivado-4720-DESKTOP-JC6NIF0/dcp_4/PLL.edf:244]
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_early.xdc]
-INFO: [Timing 38-35] Done setting XDC timing constraints. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_early.xdc]
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_late.xdc]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_late.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.553 . Memory (MB): peak = 1618.254 ; gain = 0.063
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.554 . Memory (MB): peak = 1618.254 ; gain = 0.063
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1666.973 ; gain = 52.063
-set_property IOSTANDARD LVTTL [get_ports [list {AD[13]} {AD[12]} {AD[11]} {AD[10]} {AD[9]} {AD[8]} {AD[7]} {AD[6]} {AD[5]} {AD[4]} {AD[3]} {AD[2]} {AD[1]} {AD[0]}]]
-set_property IOSTANDARD LVTTL [get_ports [list ad_clk]]
-set_property IOSTANDARD LVTTL [get_ports [list clk]]
-set_property IOSTANDARD LVTTL [get_ports [list DRY]]
-set_property IOSTANDARD LVTTL [get_ports [list ovr_in]]
-set_property IOSTANDARD LVTTL [get_ports [list rx_ready]]
-set_property IOSTANDARD LVTTL [get_ports [list tx]]
-set_property IOSTANDARD LVTTL [get_ports [list tx_ready]]
-file mkdir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1
-file mkdir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1/new
-close [ open E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1/new/TOP.xdc w ]
-add_files -fileset constrs_1 E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1/new/TOP.xdc
-write_xdc E:/Workspace/Vivado_16.4/2017_11_5_FFT/impl_1.xdc -mode port -force
-place_ports ad_clk F3
-place_ports DRY F4
-place_ports ovr_in M4
-place_ports rx_ready A7
-place_ports tx B6
-place_ports tx_ready B7
-place_ports {AD[0]} L4
-place_ports {AD[1]} K3
-place_ports {AD[2]} J3
-place_ports {AD[3]} H3
-place_ports {AD[4]} H4
-place_ports {AD[5]} H5
-place_ports {AD[6]} L2
-place_ports {AD[7]} L3
-place_ports {AD[8]} J1
-place_ports {AD[9]} K1
-place_ports {AD[10]} H1
-place_ports {AD[11]} H2
-place_ports {AD[12]} G1
-place_ports {AD[13]} G2
-write_xdc E:/Workspace/Vivado_16.4/2017_11_5_FFT/impl_1.xdc -mode port -force
-place_ports clk N11
-set_property target_constrs_file E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1/new/TOP.xdc [current_fileset -constrset]
-save_constraints -force
-ERROR: [Common 17-53] User Exception: A file was added to constraint set constrs_1 after the  implementation design was open. Doing "Save Constraints" will overwrite these files. Use "Save Constraints As" to avoid losing any data on disk.
-save_constraints -force
-ERROR: [Common 17-53] User Exception: A file was added to constraint set constrs_1 after the  implementation design was open. Doing "Save Constraints" will overwrite these files. Use "Save Constraints As" to avoid losing any data on disk.
-save_constraints -force
-ERROR: [Common 17-53] User Exception: A file was added to constraint set constrs_1 after the  implementation design was open. Doing "Save Constraints" will overwrite these files. Use "Save Constraints As" to avoid losing any data on disk.
-save_constraints_as constrs_2
-set_property constrset constrs_2 [get_runs synth_1]
-set_property constrset constrs_2 [get_runs impl_1]
-delete_fileset constrs_1
-file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-INFO: [HDL 9-2216] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library work [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:1]
-[Sun Nov 26 00:54:00 2017] Launched synth_1...
-Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 4
-[Sun Nov 26 00:55:07 2017] Launched impl_1...
-Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/runme.log
-set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Sun Nov 26 01:00:22 2017] Launched impl_1...
-Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/runme.log
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 827.789 ; gain = 160.551
 open_hw
-connect_hw_server
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
 INFO: [Labtools 27-2222] Launching hw_server...
 INFO: [Labtools 27-2221] Launch Output:
@@ -208,547 +27,67 @@ INFO: [Labtools 27-2221] Launch Output:
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
 
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210512180081]
+set_property PARAM.FREQUENCY 10000000 [get_hw_targets */xilinx_tcf/Digilent/210512180081]
 open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
 set_property PROGRAM.FILE {E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a35t_0] 0]
 current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
-2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
-set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROGRAM.FILE {E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP.bit} [lindex [get_hw_devices xc7a35t_0] 0]
-program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
 Resolution: 
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
 2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
-WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
-WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
-WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
-WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_2
-Design is defaulting to synth run part: xc7a35tftg256-1
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp' for cell 'PLL_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp' for cell 'FFT_Control_inst2/FFT_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp' for cell 'FIFO_Control_inst3/FIFO_inst0'
-INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.4
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance rd_clk]'. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "rd_clk_period": no such variable
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:62]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "skew_value": no such variable
-can't read "skew_value": no such variable
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2056.891 ; gain = 139.348
-close_design
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_2
-Design is defaulting to synth run part: xc7a35tftg256-1
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp' for cell 'PLL_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp' for cell 'FFT_Control_inst2/FFT_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp' for cell 'FIFO_Control_inst3/FIFO_inst0'
-INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.4
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance rd_clk]'. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "rd_clk_period": no such variable
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:62]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "skew_value": no such variable
-can't read "skew_value": no such variable
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2061.922 ; gain = 5.031
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 32768 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list PLL_inst0/inst/clk_out1 ]]
-set_property port_width 14 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {AD_inst1/ad_reg2[0]} {AD_inst1/ad_reg2[1]} {AD_inst1/ad_reg2[2]} {AD_inst1/ad_reg2[3]} {AD_inst1/ad_reg2[4]} {AD_inst1/ad_reg2[5]} {AD_inst1/ad_reg2[6]} {AD_inst1/ad_reg2[7]} {AD_inst1/ad_reg2[8]} {AD_inst1/ad_reg2[9]} {AD_inst1/ad_reg2[10]} {AD_inst1/ad_reg2[11]} {AD_inst1/ad_reg2[12]} {AD_inst1/ad_reg2[13]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 28 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {FIFO_Control_inst3/data_uart[0]} {FIFO_Control_inst3/data_uart[1]} {FIFO_Control_inst3/data_uart[2]} {FIFO_Control_inst3/data_uart[4]} {FIFO_Control_inst3/data_uart[5]} {FIFO_Control_inst3/data_uart[6]} {FIFO_Control_inst3/data_uart[7]} {FIFO_Control_inst3/data_uart[8]} {FIFO_Control_inst3/data_uart[9]} {FIFO_Control_inst3/data_uart[10]} {FIFO_Control_inst3/data_uart[12]} {FIFO_Control_inst3/data_uart[13]} {FIFO_Control_inst3/data_uart[14]} {FIFO_Control_inst3/data_uart[15]} {FIFO_Control_inst3/data_uart[16]} {FIFO_Control_inst3/data_uart[17]} {FIFO_Control_inst3/data_uart[18]} {FIFO_Control_inst3/data_uart[20]} {FIFO_Control_inst3/data_uart[21]} {FIFO_Control_inst3/data_uart[22]} {FIFO_Control_inst3/data_uart[23]} {FIFO_Control_inst3/data_uart[24]} {FIFO_Control_inst3/data_uart[25]} {FIFO_Control_inst3/data_uart[26]} {FIFO_Control_inst3/data_uart[28]} {FIFO_Control_inst3/data_uart[29]} {FIFO_Control_inst3/data_uart[30]} {FIFO_Control_inst3/data_uart[31]} ]]
-current_design impl_1
-current_design synth_1
-save_constraints
-current_design impl_1
-reset_run impl_1
-launch_runs impl_1 -jobs 4
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 2105.328 ; gain = 0.000
-[Sun Nov 26 01:28:18 2017] Launched impl_1...
-Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/runme.log
-ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Xilinx/00000000000000.
-Check cable connectivity and that the target board is powered up then
-use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00000000000000
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/debug_nets.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0]
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
 Resolution: 
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
 2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
-WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
-WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
-WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
-WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
-close_design
-close_design
-open_run impl_1
-INFO: [Netlist 29-17] Analyzing 176 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.4
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_board.xdc]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_board.xdc]
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_early.xdc]
-INFO: [Timing 38-35] Done setting XDC timing constraints. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_early.xdc]
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP.xdc]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP.xdc]
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_late.xdc]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/.Xil/Vivado-8264-DESKTOP-JC6NIF0/dcp/TOP_late.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.778 . Memory (MB): peak = 2105.328 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.779 . Memory (MB): peak = 2105.328 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 58 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 52 instances
-  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 6 instances
-
-open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2105.328 ; gain = 0.000
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[0]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[1]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[2]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[3]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[4]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[5]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[6]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[7]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[8]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[9]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[10]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[11]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[12]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[13]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[0]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[1]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[2]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[3]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[4]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[5]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[6]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[7]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[8]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[9]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[10]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[11]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[12]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[13]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[0]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[1]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[2]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[3]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[4]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[5]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[6]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[7]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[8]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[9]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[10]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[11]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[12]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[13]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[0]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[1]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[2]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[3]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[4]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[5]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[6]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[7]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[8]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[9]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[10]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[11]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[12]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[13]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[0]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[1]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[2]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[3]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[4]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[5]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[6]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[7]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[8]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[9]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[10]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[11]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[12]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[13]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[0]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[1]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[2]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[3]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[4]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[5]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[6]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[7]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[8]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[9]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[10]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[11]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[12]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[13]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[0]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[1]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[2]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[3]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[4]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[5]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[6]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[7]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[8]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[9]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[10]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[11]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[12]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[13]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[0]'; it is not accessible from the fabric routing.
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'AD[1]'; it is not accessible from the fabric routing.
-INFO: [Common 17-14] Message 'Chipscope 16-3' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_2
-Design is defaulting to synth run part: xc7a35tftg256-1
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp' for cell 'PLL_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp' for cell 'FFT_Control_inst2/FFT_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp' for cell 'FIFO_Control_inst3/FIFO_inst0'
-INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.4
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance rd_clk]'. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "rd_clk_period": no such variable
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:62]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "skew_value": no such variable
-can't read "skew_value": no such variable
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2177.301 ; gain = 22.973
-current_design impl_1
-ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Xilinx/00000000000000.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a35t_0 and the probes file(s) E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/debug_nets.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/impl_1/TOP.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 20   Memory Type : ba   Memory Capacity : 17   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:03 ; elapsed = 00:02:23 . Memory (MB): peak = 923.410 ; gain = 1.227
+endgroup
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
 Check cable connectivity and that the target board is powered up then
 use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/00000000000000
-close_design
-close_design
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_2
-Design is defaulting to synth run part: xc7a35tftg256-1
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp' for cell 'PLL_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp' for cell 'FFT_Control_inst2/FFT_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp' for cell 'FIFO_Control_inst3/FIFO_inst0'
-INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.4
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance rd_clk]'. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "rd_clk_period": no such variable
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:62]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "skew_value": no such variable
-can't read "skew_value": no such variable
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2177.301 ; gain = 0.000
-close_design
-add_files -norecurse {E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ADD/ADD/ADD.xci}
-export_ip_user_files -of_objects  [get_files  {E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ADD/ADD/ADD.xci}] -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -force -quiet
-add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v
-remove_files  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ADD/ADD/ADD.xci
-file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ip/ADD E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts/ADD
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci' is already up-to-date
-INFO: [HDL 9-2216] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library work [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:1]
-[Sun Nov 26 02:14:49 2017] Launched synth_1...
-Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/runme.log
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_2
-Design is defaulting to synth run part: xc7a35tftg256-1
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp' for cell 'PLL_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp' for cell 'FFT_Control_inst2/FFT_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp' for cell 'FIFO_Control_inst3/FIFO_inst0'
-INFO: [Project 1-454] Reading design checkpoint 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.dcp' for cell 'test_wave_inst1/ROM_inst0'
-INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.4
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_board.xdc] for cell 'PLL_inst0/inst'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc:57]
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.xdc] for cell 'PLL_inst0/inst'
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
-WARNING: [Vivado 12-584] No ports matched 'AD[13]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:1]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:1]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[12]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:2]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:2]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[11]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:3]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:3]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[10]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:4]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:4]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[9]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:5]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:5]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[8]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:6]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:6]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[7]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:7]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:7]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[6]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:8]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:8]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[5]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:9]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:9]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[4]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:10]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:10]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[3]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:11]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:11]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[2]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:12]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:12]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[1]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:13]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:13]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[0]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:14]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ad_clk'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:15]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'DRY'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:17]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ovr_in'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:18]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ad_clk'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'DRY'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ovr_in'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[0]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:28]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:28]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[1]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:29]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:29]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[2]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:30]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[3]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:31]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:31]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[4]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:32]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:32]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[5]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:33]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[6]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:34]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[7]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:35]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:35]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[8]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:36]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[9]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:37]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[10]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:38]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[11]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:39]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[12]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:40]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:40]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'AD[13]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:41]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[0]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[1]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[2]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[3]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[4]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[5]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[6]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[7]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[8]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[9]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[10]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[11]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[12]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'AD_inst1/ad_reg2[13]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'ad_clk_OBUF'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:65]
-CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:65]
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp'
-Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance rd_clk]'. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "rd_clk_period": no such variable
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc:62]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-can't read "skew_value": no such variable
-can't read "skew_value": no such variable
-Finished Parsing XDC File [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO/FIFO_clocks.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0/U0'
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2177.301 ; gain = 0.000
-delete_debug_core [get_debug_cores {u_ila_0 }]
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081

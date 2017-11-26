@@ -26,10 +26,10 @@ set_property used_in_implementation false [get_files e:/Workspace/Vivado_16.4/20
 add_files -quiet e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp
 set_property used_in_implementation false [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp]
 read_verilog -library xil_defaultlib {
+  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v
   E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v
   E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v
   E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v
-  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v
   E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v
 }
 read_ip -quiet E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci

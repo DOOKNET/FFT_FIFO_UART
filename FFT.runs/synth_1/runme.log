@@ -14,31 +14,30 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9024 
+INFO: Helper process launched with PID 10972 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 312.629 ; gain = 102.207
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 313.738 ; gain = 103.320
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'TOP' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:1]
-INFO: [Synth 8-638] synthesizing module 'PLL' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/realtime/PLL_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'PLL' (1#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/realtime/PLL_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'PLL' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/realtime/PLL_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'PLL' (1#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/realtime/PLL_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'test_wave' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v:1]
 	Parameter Freq_I bound to: 4294967 - type: integer 
 	Parameter Freq_Q bound to: 12884902 - type: integer 
 	Parameter cnt_width bound to: 8'b00100000 
-INFO: [Synth 8-638] synthesizing module 'ROM' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/realtime/ROM_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'ROM' (2#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/realtime/ROM_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ROM' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/realtime/ROM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (2#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/realtime/ROM_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'test_wave' (3#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v:1]
 INFO: [Synth 8-638] synthesizing module 'FFT_Control' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v:1]
-INFO: [Synth 8-638] synthesizing module 'FFT' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/realtime/FFT_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'FFT' (4#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/realtime/FFT_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'FFT' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/realtime/FFT_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'FFT' (4#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/realtime/FFT_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'FFT_Control' (5#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v:1]
-WARNING: [Synth 8-689] width (14) of port connection 's_axis_data_tdata' does not match port width (32) of module 'FFT_Control' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:50]
 INFO: [Synth 8-638] synthesizing module 'FIFO_Control' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v:7]
 	Parameter state_0 bound to: 3'b001 
 	Parameter state_1 bound to: 3'b010 
 	Parameter state_2 bound to: 3'b100 
-INFO: [Synth 8-638] synthesizing module 'FIFO' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/realtime/FIFO_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'FIFO' (6#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/realtime/FIFO_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'FIFO' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/realtime/FIFO_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'FIFO' (6#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/realtime/FIFO_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'FIFO_Control' (7#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v:7]
 INFO: [Synth 8-638] synthesizing module 'uart_tx' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v:1]
 	Parameter BPS bound to: 10'b1101100100 
@@ -46,7 +45,7 @@ INFO: [Synth 8-638] synthesizing module 'uart_tx' [E:/Workspace/Vivado_16.4/2017
 INFO: [Synth 8-256] done synthesizing module 'uart_tx' (8#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v:1]
 INFO: [Synth 8-256] done synthesizing module 'TOP' (9#1) [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 349.926 ; gain = 139.504
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 351.059 ; gain = 140.641
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -56,9 +55,9 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 349.926 ; gain = 139.504
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 351.059 ; gain = 140.641
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'FFT' instantiated as 'FFT_Control_inst2/FFT_inst0' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v:92]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'FFT' instantiated as 'FFT_Control_inst2/FFT_inst0' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v:95]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'FIFO' instantiated as 'FIFO_Control_inst3/FIFO_inst0' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v:100]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'PLL' instantiated as 'PLL_inst0' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:29]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ROM' instantiated as 'test_wave_inst1/ROM_inst0' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v:29]
@@ -67,14 +66,14 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/dcp/FFT_in_context.xdc] for cell 'FFT_Control_inst2/FFT_inst0'
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/dcp/FFT_in_context.xdc] for cell 'FFT_Control_inst2/FFT_inst0'
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/dcp_2/FIFO_in_context.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0'
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/dcp_2/FIFO_in_context.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0'
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/dcp_3/PLL_in_context.xdc] for cell 'PLL_inst0'
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/dcp_3/PLL_in_context.xdc] for cell 'PLL_inst0'
-Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/dcp_4/ROM_in_context.xdc] for cell 'test_wave_inst1/ROM_inst0'
-Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/dcp_4/ROM_in_context.xdc] for cell 'test_wave_inst1/ROM_inst0'
+Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/dcp/FFT_in_context.xdc] for cell 'FFT_Control_inst2/FFT_inst0'
+Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/dcp/FFT_in_context.xdc] for cell 'FFT_Control_inst2/FFT_inst0'
+Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/dcp_2/FIFO_in_context.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0'
+Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/dcp_2/FIFO_in_context.xdc] for cell 'FIFO_Control_inst3/FIFO_inst0'
+Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/dcp_3/PLL_in_context.xdc] for cell 'PLL_inst0'
+Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/dcp_3/PLL_in_context.xdc] for cell 'PLL_inst0'
+Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/dcp_4/ROM_in_context.xdc] for cell 'test_wave_inst1/ROM_inst0'
+Finished Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/dcp_4/ROM_in_context.xdc] for cell 'test_wave_inst1/ROM_inst0'
 Parsing XDC File [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
 WARNING: [Vivado 12-584] No ports matched 'AD[13]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:1]
 WARNING: [Vivado 12-584] No ports matched 'AD[12]'. [E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc:2]
@@ -121,26 +120,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 649.012 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 650.215 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'test_wave_inst1/ROM_inst0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tftg256-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/dcp_3/PLL_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-7900-DESKTOP-JC6NIF0/dcp_3/PLL_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/dcp_3/PLL_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/.Xil/Vivado-1948-DESKTOP-JC6NIF0/dcp_3/PLL_in_context.xdc, line 4).
+Applied set_property MARK_DEBUG = true for clk_100. (constraint file  E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc, line 48).
 Applied set_property DONT_TOUCH = true for test_wave_inst1/ROM_inst0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "cnt_en" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-4471] merging register 'uart_en_reg' into 'rd_en_reg' [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v:82]
@@ -180,7 +180,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'num_reg' using encoding 'o
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'num_r_reg' using encoding 'one-hot' in module 'uart_tx'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -270,11 +270,11 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "FFT_Control_inst2/cnt_en" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "uart_tx_inst4/clk_bps" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3332] Sequential element (test_wave_inst1/cnt_Q_reg[0]) is unused and will be removed from module TOP.
+INFO: [Synth 8-5546] ROM "cnt_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_bps" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3332] Sequential element (cnt_Q_reg[0]) is unused and will be removed from module test_wave.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -291,10 +291,10 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'PLL_inst0/clk_out1' to pin 'PLL_inst0/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -306,7 +306,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -329,8 +329,9 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v:17]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -343,7 +344,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -355,25 +356,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -384,9 +385,9 @@ Report BlackBoxes:
 |      |BlackBox name |Instances |
 +------+--------------+----------+
 |1     |PLL           |         1|
-|2     |FFT           |         1|
-|3     |FIFO          |         1|
-|4     |ROM           |         1|
+|2     |ROM           |         1|
+|3     |FFT           |         1|
+|4     |FIFO          |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
@@ -414,17 +415,17 @@ Report Instance Areas:
 |      |Instance             |Module       |Cells |
 +------+---------------------+-------------+------+
 |1     |top                  |             |   473|
-|2     |  FFT_Control_inst2  |FFT_Control  |   125|
-|3     |  FIFO_Control_inst3 |FIFO_Control |    82|
-|4     |  test_wave_inst1    |test_wave    |   188|
-|5     |  uart_tx_inst4      |uart_tx      |    74|
+|2     |  test_wave_inst1    |test_wave    |   188|
+|3     |  FFT_Control_inst2  |FFT_Control  |   125|
+|4     |  FIFO_Control_inst3 |FIFO_Control |    68|
+|5     |  uart_tx_inst4      |uart_tx      |    88|
 +------+---------------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 649.012 ; gain = 438.590
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 650.215 ; gain = 439.797
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 649.012 ; gain = 111.898
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 649.012 ; gain = 438.590
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 650.215 ; gain = 112.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 650.215 ; gain = 439.797
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -436,7 +437,7 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 51 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 649.012 ; gain = 416.574
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 650.215 ; gain = 417.848
 INFO: [Common 17-1381] The checkpoint 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/TOP.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 649.012 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 26 02:15:50 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 650.215 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 26 14:13:05 2017...

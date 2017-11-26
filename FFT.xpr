@@ -28,7 +28,7 @@
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/FFT.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="262"/>
+    <Option Name="WTXSimLaunchSim" Val="296"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -58,6 +58,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/Design/Code/uart_tx.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/Design/Code/test_wave.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -73,13 +80,6 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/Design/Code/FFT_Control.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/Design/Code/uart_tx.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -114,11 +114,17 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/TestBeach/tb_TOP.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="TOP"/>
+        <Option Name="TopModule" Val="tb_TOP"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SrcSet" Val="sources_1"/>
@@ -157,22 +163,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL_sim_netlist.vhdl"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL_sim_netlist.v"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL_stub.vhdl"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL_stub.v"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL.xml"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="doc/clk_wiz_v5_3_changelog.txt"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="mmcm_pll_drp_func_us_mmcm.vh"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL_board.xdc"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL.v"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="mmcm_pll_drp_func_7s_pll.vh"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="mmcm_pll_drp_func_7s_mmcm.vh"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL_clk_wiz.v"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="mmcm_pll_drp_func_us_pll.vh"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL.xdc"/>
-        <CompFileExtendedInfo CompFileName="PLL.xci" FileRelPathName="PLL.veo"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="PLL"/>
@@ -237,15 +227,13 @@
     </Run>
     <Run Id="PLL_synth_1" Type="Ft3:Synth" SrcSet="PLL" Part="xc7a35tftg256-1" ConstrsSet="PLL" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/PLL_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tftg256-1" ConstrsSet="constrs_2" Description="Default settings for Implementation." State="current" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tftg256-1" ConstrsSet="constrs_2" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
@@ -260,6 +248,7 @@
           <Option Id="BinFile">1</Option>
         </Step>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="FFT_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tftg256-1" ConstrsSet="FFT" Description="Default settings for Implementation." SynthRun="FFT_synth_1" IncludeInArchive="false">
@@ -294,9 +283,7 @@
     </Run>
     <Run Id="PLL_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tftg256-1" ConstrsSet="PLL" Description="Default settings for Implementation." SynthRun="PLL_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

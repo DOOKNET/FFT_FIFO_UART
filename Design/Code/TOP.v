@@ -11,8 +11,8 @@ module	TOP(
 wire    clk_100;
 
 wire    [13:0]  s_axis_data_tdata;      //输入处理的数据
-wire    s_axis_config_tready;           //IP Core准备接收配置信号
-wire    s_axis_data_tready;             //IP Core准备接收数据信号
+//wire    s_axis_config_tready;           //IP Core准备接收配置信号
+//wire    s_axis_data_tready;             //IP Core准备接收数据信号
 wire    [31:0]  data_out_re;
 wire    [31:0]  data_out_im;
 wire    m_axis_data_tvalid;             //输出数据有效信号
@@ -47,9 +47,9 @@ test_wave       test_wave_inst1(
 //-----------------------------------------//
 FFT_Control                 FFT_Control_inst2(
     .clk                    (clk_100),
-    .s_axis_data_tdata      (s_axis_data_tdata),      
-    .s_axis_config_tready   (s_axis_config_tready),           
-    .s_axis_data_tready     (s_axis_data_tready),
+    .s_axis_data_tdata      ({{18{s_axis_data_tdata[13]}},s_axis_data_tdata}),      
+//    .s_axis_config_tready   (s_axis_config_tready),           
+//    .s_axis_data_tready     (s_axis_data_tready),
     .data_out_re            (data_out_re), 
     .data_out_im            (data_out_im),
     .m_axis_data_tvalid     (m_axis_data_tvalid),

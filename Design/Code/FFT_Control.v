@@ -1,8 +1,8 @@
 module FFT_Control(
     input   clk,
     input   [31:0]  s_axis_data_tdata,      //输入处理的数据
-    output  s_axis_config_tready,           //IP Core准备接收配置信号
-    output  s_axis_data_tready,             //IP Core准备接收数据信号
+//    output  s_axis_config_tready,           //IP Core准备接收配置信号
+//    output  s_axis_data_tready,             //IP Core准备接收数据信号
     output  [31:0]  data_out_re,    
     output  [31:0]  data_out_im,    
     output  m_axis_data_tvalid,             //输出数据有效信号
@@ -11,7 +11,7 @@ module FFT_Control(
 //---------------输入信号-------------//
 reg     [10:0]   cnt = 0;    //计数器
 reg     cnt_en = 0;             //计数器使能信号
-reg     s_axis_config_tdata = 8'd1;
+reg     [7:0]   s_axis_config_tdata = 8'd1;
 reg     s_axis_config_tvalid = 0;
 reg     s_axis_data_tvalid = 0;
 reg     s_axis_data_tlast = 0;
@@ -24,6 +24,9 @@ wire    event_tlast_missing;
 wire    event_data_in_channel_halt;
 wire    event_data_out_channel_halt;       
 wire    event_status_channel_halt;     
+
+wire    s_axis_config_tready;
+wire    s_axis_data_tready;
 
 /*
     当s_axis_config_tready信号拉高（IP核已经准备好接收配置数据）时，
