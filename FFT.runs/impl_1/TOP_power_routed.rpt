@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date             : Sun Nov 26 14:22:01 2017
+| Date             : Mon Nov 27 02:32:31 2017
 | Host             : DESKTOP-JC6NIF0 running 64-bit major release  (build 9200)
 | Command          : report_power -file TOP_power_routed.rpt -pb TOP_power_summary_routed.pb -rpx TOP_power_routed.rpx
 | Design           : TOP
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.229  |
-| Dynamic (W)              | 0.156  |
+| Total On-Chip Power (W)  | 0.228  |
+| Dynamic (W)              | 0.155  |
 | Device Static (W)        | 0.073  |
 | Effective TJA (C/W)      | 4.9    |
 | Max Ambient (C)          | 83.9   |
@@ -50,22 +50,22 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.020 |        6 |       --- |             --- |
-| Slice Logic              |     0.005 |    10709 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     3133 |     20800 |           15.06 |
-|   Register               |    <0.001 |     5153 |     41600 |           12.39 |
-|   CARRY4                 |    <0.001 |      210 |      8150 |            2.58 |
+| Slice Logic              |     0.006 |    10816 |       --- |             --- |
+|   LUT as Logic           |     0.004 |     3187 |     20800 |           15.32 |
+|   Register               |    <0.001 |     5184 |     41600 |           12.46 |
+|   CARRY4                 |    <0.001 |      218 |      8150 |            2.67 |
 |   LUT as Shift Register  |    <0.001 |      391 |      9600 |            4.07 |
 |   LUT as Distributed RAM |    <0.001 |      152 |      9600 |            1.58 |
 |   F7/F8 Muxes            |    <0.001 |      136 |     32600 |            0.42 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |      791 |       --- |             --- |
-| Signals                  |     0.009 |     7038 |       --- |             --- |
+| Signals                  |     0.009 |     7106 |       --- |             --- |
 | Block RAM                |     0.014 |     11.5 |        50 |           23.00 |
 | PLL                      |     0.103 |        1 |         5 |           20.00 |
 | DSPs                     |     0.004 |        4 |        90 |            4.44 |
 | I/O                      |    <0.001 |        4 |       170 |            2.35 |
 | Static Power             |     0.073 |          |           |                 |
-| Total                    |     0.229 |          |           |                 |
+| Total                    |     0.228 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.072 |       0.062 |      0.010 |
+| Vccint    |       1.000 |     0.071 |       0.061 |      0.010 |
 | Vccaux    |       1.800 |     0.064 |       0.052 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -147,11 +147,11 @@ Table of Contents
 +-------------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                  | Power (W) |
 +-------------------------------------------------------------------------------------------------------+-----------+
-| TOP                                                                                                   |     0.156 |
-|   FFT_Control_inst2                                                                                   |     0.024 |
-|     FFT_inst0                                                                                         |     0.024 |
-|       U0                                                                                              |     0.024 |
-|         i_synth                                                                                       |     0.024 |
+| TOP                                                                                                   |     0.155 |
+|   FFT_Control_inst2                                                                                   |     0.023 |
+|     FFT_inst0                                                                                         |     0.023 |
+|       U0                                                                                              |     0.023 |
+|         i_synth                                                                                       |     0.023 |
 |           axi_wrapper                                                                                 |     0.002 |
 |             config_channel_fifo                                                                       |    <0.001 |
 |               gen_non_real_time.data_in_fifo_pt1                                                      |    <0.001 |
@@ -162,8 +162,8 @@ Table of Contents
 |             data_out_channel                                                                          |    <0.001 |
 |               gen_non_real_time.fifo                                                                  |    <0.001 |
 |                 fifo0                                                                                 |    <0.001 |
-|           xfft_inst                                                                                   |     0.022 |
-|             non_floating_point.arch_c.xfft_inst                                                       |     0.022 |
+|           xfft_inst                                                                                   |     0.021 |
+|             non_floating_point.arch_c.xfft_inst                                                       |     0.021 |
 |               control                                                                                 |     0.004 |
 |                 cntrl                                                                                 |    <0.001 |
 |                   has_unloading.unloading_state                                                       |    <0.001 |
@@ -264,7 +264,7 @@ Table of Contents
 |                 write_addr_mux0                                                                       |    <0.001 |
 |                 write_addr_mux1                                                                       |    <0.001 |
 |               single_channel.datapath                                                                 |     0.017 |
-|                 blkmem_gen.use_bram_only.dpm0                                                         |     0.004 |
+|                 blkmem_gen.use_bram_only.dpm0                                                         |     0.003 |
 |                 blkmem_gen.use_bram_only.dpm1                                                         |     0.003 |
 |                 i_switch_im0                                                                          |    <0.001 |
 |                 i_switch_im1                                                                          |    <0.001 |
@@ -274,7 +274,7 @@ Table of Contents
 |                 input_delay_re                                                                        |    <0.001 |
 |                 output_selector_re                                                                    |    <0.001 |
 |                 pe                                                                                    |     0.007 |
-|                   btrfly                                                                              |     0.001 |
+|                   btrfly                                                                              |     0.002 |
 |                     logic_butterfly.add_i                                                             |    <0.001 |
 |                       adder                                                                           |    <0.001 |
 |                         i_baseblox.i_baseblox_addsub                                                  |    <0.001 |
@@ -341,10 +341,10 @@ Table of Contents
 |                           prim_noinit.ram                                                             |     0.002 |
 |   PLL_inst0                                                                                           |     0.103 |
 |     inst                                                                                              |     0.103 |
-|   dbg_hub                                                                                             |     0.003 |
-|     inst                                                                                              |     0.003 |
+|   dbg_hub                                                                                             |     0.002 |
+|     inst                                                                                              |     0.002 |
 |       CORE_XSDB.UUT_MASTER                                                                            |     0.002 |
-|         U_ICON_INTERFACE                                                                              |     0.002 |
+|         U_ICON_INTERFACE                                                                              |     0.001 |
 |           U_CMD1                                                                                      |    <0.001 |
 |           U_CMD2                                                                                      |    <0.001 |
 |           U_CMD3                                                                                      |    <0.001 |
@@ -1003,7 +1003,7 @@ Table of Contents
 |                     u_srlC                                                                            |    <0.001 |
 |                     u_srlD                                                                            |    <0.001 |
 |         xsdb_memory_read_inst                                                                         |    <0.001 |
-|   uart_tx_inst4                                                                                       |    <0.001 |
+|   uart_tx_inst5                                                                                       |    <0.001 |
 +-------------------------------------------------------------------------------------------------------+-----------+
 
 

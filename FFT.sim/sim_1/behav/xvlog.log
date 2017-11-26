@@ -14,7 +14,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_
 INFO: [VRFC 10-311] analyzing module FIFO_Control
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FFT_Control
-INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tlast, assumed default net type wire [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v:108]
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tlast, assumed default net type wire [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v:107]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TOP
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_TOP.v" into library xil_defaultlib

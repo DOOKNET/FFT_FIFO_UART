@@ -2,7 +2,7 @@
 module	tb_TOP();
 
 reg 	sclk;
-reg		rx_ready;
+reg		rx_ready = 0;
 wire 	tx_ready;
 wire	tx;
 //wire	[13:0]	s_axis_data_tdata;

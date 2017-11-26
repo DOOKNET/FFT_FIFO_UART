@@ -3,8 +3,8 @@ module test_wave(
     output  signed  [13:0]	data_out
 );
 //--------------------------------------------------------//
-parameter   Freq_I = 32'd4294967;      //frequence_I = 500k
-parameter   Freq_Q = 32'd12884902;       //frequence_Q = 1.5M
+parameter   Freq_I = 32'd21474836;      //frequence_I = 500k
+parameter   Freq_Q = 32'd64424509;       //frequence_Q = 1.5M
 parameter   cnt_width =  8'd32;    
 //--------------------------------------------------------//
 

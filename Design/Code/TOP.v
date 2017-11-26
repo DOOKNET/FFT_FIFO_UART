@@ -10,17 +10,17 @@ module	TOP(
 );
 wire    clk_100;
 
-wire    [13:0]  s_axis_data_tdata;      //输入处理的数据
+wire    signed  [13:0]  s_axis_data_tdata;      //输入处理的数据
 //wire    s_axis_config_tready;           //IP Core准备接收配置信号
 //wire    s_axis_data_tready;             //IP Core准备接收数据信号
-wire    [31:0]  data_out_re;
-wire    [31:0]  data_out_im;
+wire    signed  [31:0]  data_out_re;
+wire    signed  [31:0]  data_out_im;
 wire    m_axis_data_tvalid;             //输出数据有效信号
 wire    [15:0]  m_axis_data_tuser;      //输出数据计数
 
 wire    uart_en;                        //串口使能信号
 wire    rd_clk;                         //FIFO读信号
-wire    [31:0]  data_uart;
+wire    signed  [31:0]  data_uart;
 
 //wire	ovr_out;
 //assign	ad_clk = clk_100;
@@ -69,7 +69,7 @@ FIFO_Control        FIFO_Control_inst3(
 	.data_out       (data_uart)
 );
 //-----------------------------------------//
-uart_tx         uart_tx_inst4(
+uart_tx         uart_tx_inst5(
 	.clk        (clk_100),
 	.data       (data_uart),
 	.uart_en    (uart_en),

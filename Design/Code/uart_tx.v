@@ -1,6 +1,6 @@
 module uart_tx(
 	input	clk,
-	input	[31:0]	data,
+	input	signed	[31:0]	data,
 	input	uart_en,
 	output	rd_clk,
 	output	tx
@@ -33,7 +33,7 @@ end
 //----------------------------------------------//
 reg		uart_tx = 1;			//初始状态拉高
 reg		[3:0]	num = 0;
-reg		[7:0]	tx_data = 0;
+reg		signed	[7:0]	tx_data = 0;
 //==============================//
 reg	flag = 1'b0;			//切换数据标志位
 reg	flag_r1 = 1'b0;
@@ -151,11 +151,11 @@ always @(posedge clk) begin
 				end
 			3'd4:
 				begin
-					tx_data <= 8'h0A;		num_r <= num_r + 1;
+					tx_data <= 8'h0D;		num_r <= num_r + 1;
 				end
 			3'd5:
 				begin
-					tx_data <= 8'h0D;		num_r <= 3'd0;
+					tx_data <= 8'h0A;		num_r <= 3'd0;
 				end
 		  	default: 
 		  		begin

@@ -1,10 +1,10 @@
 module FFT_Control(
     input   clk,
-    input   [31:0]  s_axis_data_tdata,      //输入处理的数据
+    input   signed  [31:0]  s_axis_data_tdata,      //输入处理的数据
 //    output  s_axis_config_tready,           //IP Core准备接收配置信号
 //    output  s_axis_data_tready,             //IP Core准备接收数据信号
-    output  [31:0]  data_out_re,    
-    output  [31:0]  data_out_im,    
+    output  reg signed  [31:0]  data_out_re = 0,    
+    output  reg signed  [31:0]  data_out_im = 0,    
     output  m_axis_data_tvalid,             //输出数据有效信号
     output  [15:0]  m_axis_data_tuser       //输出数据计数
 );
@@ -17,7 +17,7 @@ reg     s_axis_data_tvalid = 0;
 reg     s_axis_data_tlast = 0;
 reg     m_axis_data_tready = 1;
 //---------------输出信号-------------//
-wire    [63 : 0]  m_axis_data_tdata;    //fft ip核处理后的数据，其中高32位为虚部，低32位为实部信号
+wire    signed  [63 : 0]  m_axis_data_tdata;    //fft ip核处理后的数据，其中高32位为虚部，低32位为实部信号
 wire    event_frame_started;            //表明fft 开始处理一帧数据
 wire    event_tlast_unexpected ;    
 wire    event_tlast_missing;
@@ -91,7 +91,6 @@ always @(posedge clk) begin
     end
 end
 //---------------------------------------------------------//
-
 FFT                             FFT_inst0(
     .aclk                       (clk),                                              
     .s_axis_config_tdata        (s_axis_config_tdata),                              
@@ -113,7 +112,18 @@ FFT                             FFT_inst0(
     .event_data_in_channel_halt (event_data_in_channel_halt), 
     .event_data_out_channel_halt(event_data_out_channel_halt)
 );  
-
-assign data_out_re=m_axis_data_tdata[31:0];//低32位为实部信号
-assign data_out_im=m_axis_data_tdata[63:32]; // 高32位为虚部，
+//-------------------将结果取绝对值------------------------//
+always @(posedge clk) begin
+    if(m_axis_data_tdata[31] == 0)  begin
+        data_out_re <= m_axis_data_tdata[31:0];
+        data_out_im <= m_axis_data_tdata[63:32];
+    end
+    else if(m_axis_data_tdata[31] == 1) begin
+        data_out_re <= -{m_axis_data_tdata[31:0]};
+        data_out_im <= m_axis_data_tdata[63:32];
+    end
+    else ;
+end
+//assign data_out_re=m_axis_data_tdata[31:0];//低32位为实部信号
+//assign data_out_im=m_axis_data_tdata[63:32]; // 高32位为虚部，
 endmodule 

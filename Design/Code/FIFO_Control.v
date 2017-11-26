@@ -10,11 +10,11 @@ module FIFO_Control(
     input   rd_clk,             //读数据时钟
     input   data_valid,         //FFT数据准备完毕
     input   rx_ready,           //单片机准备接收数据
-    input   [31:0]  data_re,    //FFT数据
+    input   signed  [31:0]  data_re,    //FFT数据
 
     output  tx_ready,			//FIFO填装空闲状态
 	output	reg	uart_en = 0,	//uart使能信号
-	output	[31:0]	data_out
+	output	signed  [31:0]	data_out
 );
 
 parameter   state_0 = 3'b001;
