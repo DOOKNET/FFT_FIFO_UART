@@ -9,7 +9,6 @@ create_project -in_memory -part xc7a35tftg256-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/wt [current_project]
 set_property parent.project_path E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
@@ -25,24 +24,18 @@ set_property used_in_implementation false [get_files e:/Workspace/Vivado_16.4/20
 add_files -quiet e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp
 set_property used_in_implementation false [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp]
 read_verilog -library xil_defaultlib {
+  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/AD.v
   E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v
-  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v
   E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v
   E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v
   E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v
 }
-read_ip -quiet E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci
-set_property used_in_implementation false [get_files -all e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM_ooc.xdc]
-set_property is_locked true [get_files E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci]
-
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
 read_xdc E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc
 set_property used_in_implementation false [get_files E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.srcs/constrs_2/new/TOP.xdc]
 
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 
 synth_design -top TOP -part xc7a35tftg256-1
 

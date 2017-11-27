@@ -1,11 +1,11 @@
 module	TOP(
 	input	clk,
-//	input	DRY,
-//	input	ovr_in,
-//	input	signed	[13:0]	AD,
+	input	DRY,
+	input	ovr_in,
+	input	signed	[13:0]	AD,
     input   rx_ready,           //单片机拉高时，FIFO开始工作
     output  tx_ready,           //拉低时，单片机才能准备接收数据(只检测一次)
-//	output	ad_clk,
+	output	ad_clk,
     output  tx
 );
 wire    clk_100;
@@ -22,8 +22,8 @@ wire    uart_en;                        //串口使能信号
 wire    rd_clk;                         //FIFO读信号
 wire    signed  [31:0]  data_uart;
 
-//wire	ovr_out;
-//assign	ad_clk = clk_100;
+wire	ovr_out;
+assign	ad_clk = clk_100;
 
 //----------------调用IP核------------------//
 PLL             PLL_inst0(
@@ -31,19 +31,19 @@ PLL             PLL_inst0(
   .clk_in1      (clk)
 );
 //-----------------------------------------//
-test_wave       test_wave_inst1(
-    .sclk       (clk_100),
-    .data_out   (s_axis_data_tdata)
-);
-//-----------------------------------------//
-//AD              AD_inst1(
-//	.clk        (clk_100),
-//	.DRY        (DRY),
-//	.ovr_in     (ovr_in),
-//	.ad_in      (AD),
-//	.ad_out     (s_axis_data_tdata),
-//	.ovr_out    (ovr_out)
+//test_wave       test_wave_inst1(
+//    .sclk       (clk_100),
+//    .data_out   (s_axis_data_tdata)
 //);
+//-----------------------------------------//
+AD              AD_inst1(
+	.clk        (clk_100),
+	.DRY        (DRY),
+	.ovr_in     (ovr_in),
+	.ad_in      (AD),
+	.ad_out     (s_axis_data_tdata),
+	.ovr_out    (ovr_out)
+);
 //-----------------------------------------//
 FFT_Control                 FFT_Control_inst2(
     .clk                    (clk_100),

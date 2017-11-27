@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1511720204">
+<GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1511784728">
   <File Type="RDS-PROPCONSTRS" Name="TOP_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="TOP.tcl"/>
   <File Type="RDS-RDS" Name="TOP.vds"/>
@@ -10,7 +10,7 @@
   <File Type="VDS-TIMING-PB" Name="TOP_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/Design/IP_Core/ROM/ROM/ROM.xci">
+    <File Path="$PPRDIR/Design/Code/AD.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -18,13 +18,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/Design/Code/uart_tx.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/Design/Code/test_wave.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -47,14 +40,6 @@
     </File>
     <File Path="$PPRDIR/Design/Code/TOP.v">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/Design/Code/AD.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

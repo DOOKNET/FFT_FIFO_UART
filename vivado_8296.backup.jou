@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Nov 27 19:18:19 2017
+# Process ID: 8296
+# Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8464 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
+# Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/vivado.log
+# Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+remove_files  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v
+remove_files  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci
+file delete -force E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/ip/ROM E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.ip_user_files/sim_scripts/ROM
+remove_files  -fileset sim_1 E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_TOP.v
+update_compile_order -fileset sim_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+close_design
+open_hw
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+connect_hw_server
+open_hw_target
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
