@@ -2,57 +2,57 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Thu Nov 23 15:20:06 2017
-# Process ID: 11444
+# Start of session at: Mon Nov 27 23:53:07 2017
+# Process ID: 6788
 # Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/FFT_synth_1
 # Command line: vivado.exe -log FFT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT.tcl
 # Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/FFT_synth_1/FFT.vds
 # Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/FFT_synth_1\vivado.jou
 #-----------------------------------------------------------
 source FFT.tcl -notrace
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 309.949 ; gain = 100.102
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 313.906 ; gain = 103.766
 INFO: [Synth 8-638] synthesizing module 'FFT' [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/synth/FFT.vhd:83]
-INFO: [Synth 8-256] done synthesizing module 'FFT' (45#1) [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/synth/FFT.vhd:83]
-Finished RTL Elaboration : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 459.113 ; gain = 249.266
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 459.113 ; gain = 249.266
+INFO: [Synth 8-256] done synthesizing module 'FFT' (54#1) [e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/synth/FFT.vhd:83]
+Finished RTL Elaboration : Time (s): cpu = 00:01:28 ; elapsed = 00:01:34 . Memory (MB): peak = 478.969 ; gain = 268.828
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:29 ; elapsed = 00:01:35 . Memory (MB): peak = 478.969 ; gain = 268.828
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 609.875 ; gain = 1.207
-Finished Constraint Validation : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 609.875 ; gain = 400.027
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 609.875 ; gain = 400.027
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 609.875 ; gain = 400.027
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 609.875 ; gain = 400.027
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 609.875 ; gain = 400.027
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 653.504 ; gain = 443.656
-Finished Timing Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:45 . Memory (MB): peak = 670.992 ; gain = 461.145
-Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:01:47 . Memory (MB): peak = 680.332 ; gain = 470.484
-Finished IO Insertion : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:42 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.220 . Memory (MB): peak = 683.809 ; gain = 0.988
+Finished Constraint Validation : Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 683.809 ; gain = 473.668
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 683.809 ; gain = 473.668
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 683.809 ; gain = 473.668
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:56 ; elapsed = 00:02:05 . Memory (MB): peak = 683.809 ; gain = 473.668
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:11 . Memory (MB): peak = 683.809 ; gain = 473.668
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:23 ; elapsed = 00:02:33 . Memory (MB): peak = 683.809 ; gain = 473.668
+Finished Timing Optimization : Time (s): cpu = 00:02:26 ; elapsed = 00:02:36 . Memory (MB): peak = 689.461 ; gain = 479.320
+Finished Technology Mapping : Time (s): cpu = 00:02:28 ; elapsed = 00:02:39 . Memory (MB): peak = 700.918 ; gain = 490.777
+Finished IO Insertion : Time (s): cpu = 00:02:29 ; elapsed = 00:02:41 . Memory (MB): peak = 700.918 ; gain = 490.777
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:29 ; elapsed = 00:02:41 . Memory (MB): peak = 700.918 ; gain = 490.777
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:31 ; elapsed = 00:02:42 . Memory (MB): peak = 700.918 ; gain = 490.777
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:31 ; elapsed = 00:02:42 . Memory (MB): peak = 700.918 ; gain = 490.777
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:31 ; elapsed = 00:02:42 . Memory (MB): peak = 700.918 ; gain = 490.777
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:31 ; elapsed = 00:02:42 . Memory (MB): peak = 700.918 ; gain = 490.777
 
 Report Cell Usage: 
 +------+----------+------+
 |      |Cell      |Count |
 +------+----------+------+
-|1     |DSP48E1   |     2|
-|2     |DSP48E1_1 |     2|
-|3     |LUT1      |    20|
-|4     |LUT2      |   116|
-|5     |LUT3      |   231|
-|6     |LUT4      |    49|
-|7     |LUT5      |    37|
-|8     |LUT6      |   243|
-|9     |MUXCY     |   156|
-|10    |MUXF7     |    36|
-|11    |MUXF8     |    18|
-|12    |RAMB18E1  |     1|
-|13    |RAMB18SDP |     4|
-|14    |SRL16E    |   241|
-|15    |XORCY     |   143|
-|16    |FDE       |    10|
-|17    |FDRE      |  1136|
+|1     |DSP48E1   |     6|
+|2     |DSP48E1_1 |     6|
+|3     |LUT1      |    21|
+|4     |LUT2      |   380|
+|5     |LUT3      |   644|
+|6     |LUT4      |    55|
+|7     |LUT5      |    40|
+|8     |LUT6      |   544|
+|9     |MUXCY     |   492|
+|10    |MUXF7     |    16|
+|11    |RAMB18E1  |     3|
+|12    |RAMB18SDP |     8|
+|13    |SRL16E    |   276|
+|14    |XORCY     |   482|
+|15    |FDE       |    40|
+|16    |FDRE      |  2285|
+|17    |FDSE      |     4|
 +------+----------+------+
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 680.332 ; gain = 470.484
-synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:46 . Memory (MB): peak = 680.332 ; gain = 449.383
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:31 ; elapsed = 00:02:42 . Memory (MB): peak = 700.918 ; gain = 490.777
+synth_design: Time (s): cpu = 00:02:32 ; elapsed = 00:02:41 . Memory (MB): peak = 700.918 ; gain = 467.914

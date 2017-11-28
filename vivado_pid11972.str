@@ -1,0 +1,110 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+Process ID: 11972
+
+Current time: 	11/28/17 7:06:58 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	E:/Softwares/Vivado/Vivado/2016.4/tps/win64/jre
+
+User name: 	D.Z.C
+User home directory: C:/Users/D.Z.C
+User working directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI base root directory: E:/Softwares/Vivado/Vivado
+RDI data directory: E:/Softwares/Vivado/Vivado/2016.4/data
+RDI bin directory: E:/Softwares/Vivado/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/D.Z.C/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/D.Z.C/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	225 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 427 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 35 MB (+34113kb) [00:00:07]
+// [Engine Memory]: 394 MB (+261249kb) [00:00:07]
+// Opening Vivado Project: E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 439 MB. GUI used memory: 32 MB. Current time: 11/28/17 7:07:00 PM CST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+12036kb) [00:00:12]
+// [Engine Memory]: 458 MB (+46602kb) [00:00:12]
+// [Engine Memory]: 493 MB (+13149kb) [00:00:13]
+// [GUI Memory]: 51 MB (+242kb) [00:00:15]
+// [Engine Memory]: 519 MB (+1013kb) [00:00:15]
+// Tcl Message: open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Softwares/Vivado/Vivado/2016.4/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 829.082 ; gain = 163.426 
+// Project name: FFT; location: E:/Workspace/Vivado_16.4/2017_11_5_FFT; part: xc7a35tftg256-1
+// [Engine Memory]: 545 MB (+627kb) [00:00:18]
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 58 MB (+4502kb) [00:00:19]
+// [GUI Memory]: 62 MB (+1264kb) [00:00:58]
+// [GUI Memory]: 66 MB (+938kb) [00:01:08]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 70 MB (+881kb) [00:02:16]
+// [GUI Memory]: 73 MB (+29kb) [00:05:01]
+// [GUI Memory]: 78 MB (+889kb) [00:13:47]
+// [GUI Memory]: 82 MB (+78kb) [00:17:02]
+// [GUI Memory]: 86 MB (+9kb) [00:28:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 49 MB. Current time: 11/28/17 7:37:00 PM CST
+// [GUI Memory]: 92 MB (+1408kb) [00:46:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 59 MB. Current time: 11/28/17 8:07:01 PM CST
+// [GUI Memory]: 98 MB (+1797kb) [01:14:06]
+// [GUI Memory]: 104 MB (+445kb) [01:22:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 65 MB. Current time: 11/28/17 8:37:01 PM CST
+// [GUI Memory]: 110 MB (+1182kb) [01:50:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 66 MB. Current time: 11/28/17 9:07:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 65 MB. Current time: 11/28/17 9:37:05 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 65 MB. Current time: 11/28/17 10:07:05 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 65 MB. Current time: 11/28/17 10:37:06 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 65 MB. Current time: 11/28/17 11:07:06 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 65 MB. Current time: 11/28/17 11:37:06 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.

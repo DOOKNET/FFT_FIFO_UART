@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1511784730">
+<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1511860081">
   <File Type="PLACE-DCP" Name="TOP_placed.dcp"/>
   <File Type="PA-DCP" Name="TOP.dcp"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="TOP_methodology_drc_opted.rpt"/>
@@ -135,7 +135,7 @@
       <Option Id="BinFile">1</Option>
     </Step>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="FIFO"/>
   <BlockFileSet Type="BlockSrcs" Name="FFT"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIFO"/>
   <BlockFileSet Type="BlockSrcs" Name="PLL"/>
 </GenRun>

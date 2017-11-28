@@ -17,12 +17,12 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo e:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/cos_14_1024_signed.coe
-add_files -quiet e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp
-set_property used_in_implementation false [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp]
 add_files -quiet e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp
 set_property used_in_implementation false [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/FIFO.dcp]
 add_files -quiet e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp
 set_property used_in_implementation false [get_files e:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.dcp]
+add_files -quiet E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp
+set_property used_in_implementation false [get_files E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/FFT.dcp]
 read_verilog -library xil_defaultlib {
   E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/AD.v
   E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v
