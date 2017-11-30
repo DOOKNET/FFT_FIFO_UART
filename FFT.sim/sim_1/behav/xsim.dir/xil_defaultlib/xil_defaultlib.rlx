@@ -2,13 +2,15 @@
 2016.4
 Dec 14 2016
 22:58:16
-E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/AD.v,1511420415,verilog,,,,AD,,,../../../Design/IP_Core/PLL/PLL,,,,,
 E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v,1511715840,verilog,,,,FFT_Control,,,../../../Design/IP_Core/PLL/PLL,,,,,
 E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v,1511715941,verilog,,,,FIFO_Control,,,../../../Design/IP_Core/PLL/PLL,,,,,
-E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v,1511781798,verilog,,,,TOP,,,../../../Design/IP_Core/PLL/PLL,,,,,
+E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v,1511884525,verilog,,,,TOP,,,../../../Design/IP_Core/PLL/PLL,,,,,
+E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v,1511720157,verilog,,,,test_wave,,,../../../Design/IP_Core/PLL/PLL,,,,,
 E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v,1511716038,verilog,,,,uart_tx,,,../../../Design/IP_Core/PLL/PLL,,,,,
 E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/sim/FFT.vhd,1511797983,vhdl,,,,fft,,,,,,,,
 E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/sim/FIFO.v,1511601715,verilog,,,,FIFO,,,../../../Design/IP_Core/PLL/PLL,,,,,
 E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.v,1511623809,verilog,,,,PLL,,,../../../Design/IP_Core/PLL/PLL,,,,,
 E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_clk_wiz.v,1511623809,verilog,,,,PLL_clk_wiz,,,../../../Design/IP_Core/PLL/PLL,,,,,
+E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/sim/ROM.v,1508236486,verilog,,,,ROM,,,../../../Design/IP_Core/PLL/PLL,,,,,
 E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v,1481753704,verilog,,,,glbl,,,,,,,,
+E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_TOP.v,1511884430,verilog,,,,tb_TOP,,,../../../Design/IP_Core/PLL/PLL,,,,,

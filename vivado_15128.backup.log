@@ -1,0 +1,743 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Nov 28 23:43:12 2017
+# Process ID: 15128
+# Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2732 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
+# Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/vivado.log
+# Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Softwares/Vivado/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 800.195 ; gain = 153.703add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci
+export_ip_user_files -of_objects  [get_files  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci] -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -force -quiet
+add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci' is already up-to-date
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library work [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:1]
+[Tue Nov 28 23:54:06 2017] Launched synth_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci' is already up-to-date
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library work [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:1]
+[Tue Nov 28 23:55:30 2017] Launched synth_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'TOP' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/ROM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/cos_14_1024_signed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj TOP_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_wave
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT_Control
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tlast, assumed default net type wire [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v:107]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj TOP_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/sim/FFT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FFT
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 63a46008f5d845f7b87a208ca3c1b077 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L c_reg_fd_v12_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_3 -L xbip_dsp48_addsub_v3_0_3 -L xbip_addsub_v3_0_3 -L c_addsub_v12_0_10 -L c_mux_bit_v12_0_3 -L c_shift_ram_v12_0_10 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L cmpy_v6_0_12 -L floating_point_v7_0_13 -L xfft_v9_0_11 -L blk_mem_gen_v8_3_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_behav xil_defaultlib.TOP xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.v" Line 70. Module PLL has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_clk_wiz.v" Line 68. Module PLL_clk_wiz has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/continuous/2016_12_14_1733598/data/verilog/src/unisims/IBUF.v" Line 30. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/continuous/2016_12_14_1733598/data/verilog/src/unisims/PLLE2_ADV.v" Line 48. Module PLLE2_ADV(CLKFBOUT_MULT=18,CLKIN1_PERIOD=20.0,CLKOUT0_DIVIDE=9) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/continuous/2016_12_14_1733598/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/continuous/2016_12_14_1733598/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/sim/ROM.v" Line 56. Module ROM has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 3412. Module blk_mem_gen_v8_3_5(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=4,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=1,C_INIT_FILE_NAME="ROM.mif",C_INIT_FILE="ROM.mem",C_HAS_ENA=0,C_WRITE_WIDTH_A=14,C_READ_WIDTH_A=14,C_WRITE_DEPTH_A=1024,C_READ_DEPTH_A=1024,C_ADDRA_WIDTH=10,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=14,C_READ_WIDTH_B=14,C_WRITE_DEPTH_B=1024,C_READ_DEPTH_B=1024,C_ADDRB_WIDTH=10,C_HAS_MEM_OUTPUT_REGS_A=1,C_HAS_MEM_OUTPUT_REGS_B=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="0",C_COUNT_18K_BRAM="1",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____2.6263999999999998_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 1951. Module blk_mem_gen_v8_3_5_mem_module(C_CORENAME="blk_mem_gen_v8_3_5",C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_MEM_TYPE=4,C_BYTE_SIZE=9,C_USE_BRAM_BLOCK=0,C_ALGORITHM=1,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=1,C_INIT_FILE_NAME="ROM.mif",C_INIT_FILE="ROM.mem",C_USE_DEFAULT_DATA=0,C_DEFAULT_DATA="0",C_HAS_RSTA=0,C_RST_PRIORITY_A="CE",C_RSTRAM_A=0,C_INITA_VAL="0",C_HAS_ENA=0,C_HAS_REGCEA=0,C_USE_BYTE_WEA=0,C_WEA_WIDTH=1,C_WRITE_MODE_A="WRITE_FIRST",C_WRITE_WIDTH_A=14,C_READ_WIDTH_A=14,C_WRITE_DEPTH_A=1024,C_READ_DEPTH_A=1024,C_ADDRA_WIDTH=10,C_HAS_RSTB=0,C_RST_PRIORITY_B="CE",C_RSTRAM_B=0,C_INITB_VAL="0",C_HAS_ENB=0,C_HAS_REGCEB=0,C_USE_BYTE_WEB=0,C_WEB_WIDTH=1,C_WRITE_MODE_B="WRITE_FIRST",C_WRITE_WIDTH_B=14,C_READ_WIDTH_B=14,C_WRITE_DEPTH_B=1024,C_READ_DEPTH_B=1024,C_ADDRB_WIDTH=10,C_HAS_MEM_OUTPUT_REGS_A=1,C_HAS_MEM_OUTPUT_REGS_B=1,C_HAS_MUX_OUTPUT_REGS_A=0,C_HAS_MUX_OUTPUT_REGS_B=0,C_HAS_SOFTECC_INPUT_REGS_A=0,C_HAS_SOFTECC_OUTPUT_REGS_B=0,C_MUX_PIPELINE_STAGES=0,C_USE_SOFTECC=0,C_USE_ECC=0,C_HAS_INJECTERR=0,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,FLOP_DELAY=100,C_DISABLE_WARN_BHV_COLL=0,C_EN_ECC_PIPE=0,C_DISABLE_WARN_BHV_RANGE=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 1563. Module blk_mem_gen_v8_3_5_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_HAS_RST=0,C_RSTRAM=0,C_RST_PRIORITY="CE",C_INIT_VAL="0",C_HAS_EN=0,C_HAS_REGCE=0,C_DATA_WIDTH=14,C_ADDRB_WIDTH=10,C_HAS_MEM_OUTPUT_REGS=1,C_USE_SOFTECC=0,C_USE_ECC=0,NUM_STAGES=1,FLOP_DELAY=100) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 1563. Module blk_mem_gen_v8_3_5_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_HAS_RST=0,C_RSTRAM=0,C_RST_PRIORITY="CE",C_INIT_VAL="0",C_HAS_EN=0,C_HAS_REGCE=0,C_DATA_WIDTH=14,C_ADDRB_WIDTH=10,C_HAS_MEM_OUTPUT_REGS=1,C_USE_SOFTECC=0,C_USE_ECC=0,NUM_STAGES=1,C_EN_ECC_PIPE=0,FLOP_DELAY=100) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 1859. Module blk_mem_gen_v8_3_5_softecc_output_reg_stage(C_DATA_WIDTH=14,C_ADDRB_WIDTH=10,C_HAS_SOFTECC_OUTPUT_REGS_B=0,C_USE_SOFTECC=0,FLOP_DELAY=100) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 1493. Module blk_mem_axi_regs_fwd_v8_3(C_DATA_WIDTH=7) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" Line 56. Module FIFO has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/hdl/fifo_generator_v13_1_rfs.v" Line 1. Module fifo_generator_v13_1_3(C_DATA_COUNT_WIDTH=10,C_DEFAULT_VALUE="BlankString",C_DIN_WIDTH=32,C_DOUT_RST_VAL="0",C_DOUT_WIDTH=32,C_FAMILY="artix7",C_FULL_FLAGS_RST_VAL=0,C_HAS_RD_DATA_COUNT=1,C_HAS_RST=0,C_HAS_WR_DATA_COUNT=1,C_IMPLEMENTATION_TYPE=2,C_MIF_FILE_NAME="BlankString",C_PRIM_FIFO_TYPE="1kx36",C_PROG_EMPTY_THRESH_ASSERT_VAL=2,C_PROG_EMPTY_THRESH_NEGATE_VAL=3,C_PROG_FULL_THRESH_ASSERT_VAL=1021,C_PROG_FULL_THRESH_NEGATE_VAL=1020,C_RD_DATA_COUNT_WIDTH=10,C_RD_DEPTH=1024,C_RD_PNTR_WIDTH=10,C_WR_DATA_COUNT_WIDTH=10,C_WR_DEPTH=1024,C_WR_PNTR_WIDTH=10,C_AXI_TYPE=1,C_HAS_AXI_WR_CHANNEL=1,C_HAS_AXI_RD_CHANNEL=1,C_AXI_ID_WIDTH=1,C_AXI_LOCK_WIDTH=1,C_HAS_AXIS_TDATA=1,C_HAS_AXIS_TUSER=1,C_AXIS_TDATA_WIDTH=8,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_AXIS_TSTRB_WIDTH=1,C_AXIS_TKEEP_WIDTH=1,C_PRIM_FIFO_TYPE_WDCH="1kx36",C_PRIM_FIFO_TYPE_RDCH="1kx36",C_PRIM_FIFO_TYPE_AXIS="1kx18",C_DIN_WIDTH_WACH=1,C_PROG_FULL_TYPE_WACH=0,C_PROG_FULL_TYPE_WDCH=0,C_PROG_FULL_TYPE_WRCH=0,C_PROG_FULL_TYPE_RACH=0,C_PROG_FULL_TYPE_RDCH=0,C_PROG_FULL_TYPE_AXIS=0,C_PROG_EMPTY_TYPE_WACH=0,C_PROG_EMPTY_TYPE_WDCH=0,C_PROG_EMPTY_TYPE_WRCH=0,C_PROG_EMPTY_TYPE_RACH=0,C_PROG_EMPTY_TYPE_RDCH=0,C_PROG_EMPTY_TYPE_AXIS=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 98. Module fifo_generator_vlog_beh(C_COMMON_CLOCK=0,C_COUNT_TYPE=0,C_DATA_COUNT_WIDTH=10,C_DEFAULT_VALUE="BlankString",C_DIN_WIDTH=32,C_DOUT_RST_VAL="0",C_DOUT_WIDTH=32,C_ENABLE_RLOCS=0,C_FAMILY="artix7",C_FULL_FLAGS_RST_VAL=0,C_HAS_ALMOST_EMPTY=0,C_HAS_ALMOST_FULL=0,C_HAS_BACKUP=0,C_HAS_DATA_COUNT=0,C_HAS_INT_CLK=0,C_HAS_MEMINIT_FILE=0,C_HAS_OVERFLOW=0,C_HAS_RD_DATA_COUNT=1,C_HAS_RD_RST=0,C_HAS_RST=0,C_HAS_SRST=0,C_HAS_UNDERFLOW=0,C_HAS_VALID=0,C_HAS_WR_ACK=0,C_HAS_WR_DATA_COUNT=1,C_HAS_WR_RST=0,C_IMPLEMENTATION_TYPE=2,C_INIT_WR_PNTR_VAL=0,C_MEMORY_TYPE=1,C_MIF_FILE_NAME="BlankString",C_OPTIMIZATION_MODE=0,C_OVERFLOW_LOW=0,C_EN_SAFETY_CKT=0,C_PRELOAD_LATENCY=1,C_PRELOAD_REGS=0,C_PRIM_FIFO_TYPE="1kx36",C_PROG_EMPTY_THRESH_ASSERT_VAL=2,C_PROG_EMPTY_THRESH_NEGATE_VAL=3,C_PROG_EMPTY_TYPE=0,C_PROG_FULL_THRESH_ASSERT_VAL=1021,C_PROG_FULL_THRESH_NEGATE_VAL=1020,C_PROG_FULL_TYPE=0,C_RD_DATA_COUNT_WIDTH=10,C_RD_DEPTH=1024,C_RD_FREQ=1,C_RD_PNTR_WIDTH=10,C_UNDERFLOW_LOW=0,C_USE_DOUT_RST=0,C_USE_ECC=0,C_USE_EMBEDDED_REG=0,C_USE_PIPELINE_REG=0,C_POWER_SAVING_MODE=0,C_USE_FIFO16_FLAGS=0,C_USE_FWFT_DATA_COUNT=0,C_VALID_LOW=0,C_WR_ACK_LOW=0,C_WR_DATA_COUNT_WIDTH=10,C_WR_DEPTH=1024,C_WR_FREQ=1,C_WR_PNTR_WIDTH=10,C_WR_RESPONSE_LATENCY=1,C_MSGON_VAL=1,C_ENABLE_RST_SYNC=1,C_ERROR_INJECTION_TYPE=0,C_SYNCHRONIZER_STAGE=2,C_INTERFACE_TYPE=0,C_AXI_TYPE=1,C_HAS_AXI_WR_CHANNEL=1,C_HAS_AXI_RD_CHANNEL=1,C_HAS_SLAVE_CE=0,C_HAS_MASTER_CE=0,C_ADD_NGC_CONSTRAINT=0,C_USE_COMMON_UNDERFLOW=0,C_USE_COMMON_OVERFLOW=0,C_USE_DEFAULT_SETTINGS=0,C_AXI_ID_WIDTH=1,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_WIDTH=64,C_AXI_LEN_WIDTH=8,C_AXI_LOCK_WIDTH=1,C_HAS_AXI_ID=0,C_HAS_AXI_AWUSER=0,C_HAS_AXI_WUSER=0,C_HAS_AXI_BUSER=0,C_HAS_AXI_ARUSER=0,C_HAS_AXI_RUSER=0,C_AXI_ARUSER_WIDTH=1,C_AXI_AWUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_HAS_AXIS_TDATA=1,C_HAS_AXIS_TID=0,C_HAS_AXIS_TDEST=0,C_HAS_AXIS_TUSER=1,C_HAS_AXIS_TREADY=1,C_HAS_AXIS_TLAST=0,C_HAS_AXIS_TSTRB=0,C_HAS_AXIS_TKEEP=0,C_AXIS_TDATA_WIDTH=8,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_AXIS_TUSER_WIDTH=4,C_AXIS_TSTRB_WIDTH=1,C_AXIS_TKEEP_WIDTH=1,C_WACH_TYPE=0,C_WDCH_TYPE=0,C_WRCH_TYPE=0,C_RACH_TYPE=0,C_RDCH_TYPE=0,C_AXIS_TYPE=0,C_IMPLEMENTATION_TYPE_WACH=1,C_IMPLEMENTATION_TYPE_WDCH=1,C_IMPLEMENTATION_TYPE_WRCH=1,C_IMPLEMENTATION_TYPE_RACH=1,C_IMPLEMENTATION_TYPE_RDCH=1,C_IMPLEMENTATION_TYPE_AXIS=1,C_APPLICATION_TYPE_WACH=0,C_APPLICATION_TYPE_WDCH=0,C_APPLICATION_TYPE_WRCH=0,C_APPLICATION_TYPE_RACH=0,C_APPLICATION_TYPE_RDCH=0,C_APPLICATION_TYPE_AXIS=0,C_PRIM_FIFO_TYPE_WACH="512x36",C_PRIM_FIFO_TYPE_WDCH="1kx36",C_PRIM_FIFO_TYPE_WRCH="512x36",C_PRIM_FIFO_TYPE_RACH="512x36",C_PRIM_FIFO_TYPE_RDCH="1kx36",C_PRIM_FIFO_TYPE_AXIS="1kx18",C_USE_ECC_WACH=0,C_USE_ECC_WDCH=0,C_USE_ECC_WRCH=0,C_USE_ECC_RACH=0,C_USE_ECC_RDCH=0,C_USE_ECC_AXIS=0,C_ERROR_INJECTION_TYPE_WACH=0,C_ERROR_INJECTION_TYPE_WDCH=0,C_ERROR_INJECTION_TYPE_WRCH=0,C_ERROR_INJECTION_TYPE_RACH=0,C_ERROR_INJECTION_TYPE_RDCH=0,C_ERROR_INJECTION_TYPE_AXIS=0,C_DIN_WIDTH_WACH=1,C_DIN_WIDTH_WDCH=64,C_DIN_WIDTH_WRCH=2,C_DIN_WIDTH_RACH=32,C_DIN_WIDTH_RDCH=64,C_DIN_WIDTH_AXIS=1,C_WR_DEPTH_WACH=16,C_WR_DEPTH_WDCH=1024,C_WR_DEPTH_WRCH=16,C_WR_DEPTH_RACH=16,C_WR_DEPTH_RDCH=1024,C_WR_DEPTH_AXIS=1024,C_WR_PNTR_WIDTH_WACH=4,C_WR_PNTR_WIDTH_WDCH=10,C_WR_PNTR_WIDTH_WRCH=4,C_WR_PNTR_WIDTH_RACH=4,C_WR_PNTR_WIDTH_RDCH=10,C_WR_PNTR_WIDTH_AXIS=10,C_HAS_DATA_COUNTS_WACH=0,C_HAS_DATA_COUNTS_WDCH=0,C_HAS_DATA_COUNTS_WRCH=0,C_HAS_DATA_COUNTS_RACH=0,C_HAS_DATA_COUNTS_RDCH=0,C_HAS_DATA_COUNTS_AXIS=0,C_PROG_FULL_TYPE_WACH=0,C_PROG_FULL_TYPE_WDCH=0,C_PROG_FULL_TYPE_WRCH=0,C_PROG_FULL_TYPE_RACH=0,C_PROG_FULL_TYPE_RDCH=0,C_PROG_FULL_TYPE_AXIS=0,C_PROG_FULL_THRESH_ASSERT_VAL_WACH=1023,C_PROG_FULL_THRESH_ASSERT_VAL_WDCH=1023,C_PROG_FULL_THRESH_ASSERT_VAL_WRCH=1023,C_PROG_FULL_THRESH_ASSERT_VAL_RACH=1023,C_PROG_FULL_THRESH_ASSERT_VAL_RDCH=1023,C_PROG_FULL_THRESH_ASSERT_VAL_AXIS=1023,C_PROG_EMPTY_TYPE_WACH=0,C_PROG_EMPTY_TYPE_WDCH=0,C_PROG_EMPTY_TYPE_WRCH=0,C_PROG_EMPTY_TYPE_RACH=0,C_PROG_EMPTY_TYPE_RDCH=0,C_PROG_EMPTY_TYPE_AXIS=0,C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH=1022,C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH=1022,C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH=1022,C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH=1022,C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH=1022,C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS=1022,C_REG_SLICE_MODE_WACH=0,C_REG_SLICE_MODE_WDCH=0,C_REG_SLICE_MODE_WRCH=0,C_REG_SLICE_MODE_RACH=0,C_REG_SLICE_MODE_RDCH=0,C_REG_SLICE_MODE_AXIS=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 3366. Module fifo_generator_v13_1_3_CONV_VER(C_COMMON_CLOCK=0,C_INTERFACE_TYPE=0,C_EN_SAFETY_CKT=0,C_COUNT_TYPE=0,C_DATA_COUNT_WIDTH=10,C_DEFAULT_VALUE="BlankString",C_DIN_WIDTH=32,C_DOUT_RST_VAL=32'b0,C_DOUT_WIDTH=32,C_ENABLE_RLOCS=0,C_FAMILY="artix7",C_FULL_FLAGS_RST_VAL=0,C_HAS_ALMOST_EMPTY=0,C_HAS_ALMOST_FULL=0,C_HAS_BACKUP=0,C_HAS_DATA_COUNT=0,C_HAS_INT_CLK=0,C_HAS_MEMINIT_FILE=0,C_HAS_OVERFLOW=0,C_HAS_RD_DATA_COUNT=1,C_HAS_RD_RST=0,C_HAS_RST=0,C_HAS_SRST=0,C_HAS_UNDERFLOW=0,C_HAS_VALID=0,C_HAS_WR_ACK=0,C_HAS_WR_DATA_COUNT=1,C_HAS_WR_RST=0,C_IMPLEMENTATION_TYPE=2,C_INIT_WR_PNTR_VAL=0,C_MEMORY_TYPE=1,C_MIF_FILE_NAME="BlankString",C_OPTIMIZATION_MODE=0,C_OVERFLOW_LOW=0,C_PRELOAD_LATENCY=1,C_PRELOAD_REGS=0,C_PRIM_FIFO_TYPE="1kx36",C_PROG_EMPTY_THRESH_ASSERT_VAL=2,C_PROG_EMPTY_THRESH_NEGATE_VAL=3,C_PROG_EMPTY_TYPE=0,C_PROG_FULL_THRESH_ASSERT_VAL=1021,C_PROG_FULL_THRESH_NEGATE_VAL=1020,C_PROG_FULL_TYPE=0,C_RD_DATA_COUNT_WIDTH=10,C_RD_DEPTH=1024,C_RD_FREQ=1,C_RD_PNTR_WIDTH=10,C_UNDERFLOW_LOW=0,C_USE_DOUT_RST=0,C_USE_ECC=0,C_USE_EMBEDDED_REG=0,C_USE_FIFO16_FLAGS=0,C_USE_FWFT_DATA_COUNT=0,C_VALID_LOW=0,C_WR_ACK_LOW=0,C_WR_DATA_COUNT_WIDTH=10,C_WR_DEPTH=1024,C_WR_FREQ=1,C_WR_PNTR_WIDTH=10,C_WR_RESPONSE_LATENCY=1,C_MSGON_VAL=1,C_ENABLE_RST_SYNC=1,C_ERROR_INJECTION_TYPE=0,C_SYNCHRONIZER_STAGE=2,C_AXI_TYPE=1) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5056. Module fifo_generator_v13_1_3_bhv_ver_as(C_FAMILY="artix7",C_DATA_COUNT_WIDTH=10,C_DIN_WIDTH=32,C_DOUT_RST_VAL=32'b0,C_DOUT_WIDTH=32,C_FULL_FLAGS_RST_VAL=0,C_HAS_ALMOST_EMPTY=0,C_HAS_ALMOST_FULL=0,C_HAS_DATA_COUNT=0,C_HAS_OVERFLOW=0,C_HAS_RD_DATA_COUNT=1,C_HAS_RST=0,C_HAS_UNDERFLOW=0,C_HAS_VALID=0,C_HAS_WR_ACK=0,C_HAS_WR_DATA_COUNT=1,C_IMPLEMENTATION_TYPE=2,C_MEMORY_TYPE=1,C_OVERFLOW_LOW=0,C_PRELOAD_LATENCY=1,C_PRELOAD_REGS=0,C_PROG_EMPTY_THRESH_ASSERT_VAL=2,C_PROG_EMPTY_THRESH_NEGATE_VAL=3,C_PROG_EMPTY_TYPE=0,C_PROG_FULL_THRESH_ASSERT_VAL=1021,C_PROG_FULL_THRESH_NEGATE_VAL=1020,C_PROG_FULL_TYPE=0,C_RD_DATA_COUNT_WIDTH=10,C_RD_DEPTH=1024,C_RD_PNTR_WIDTH=10,C_UNDERFLOW_LOW=0,C_USE_DOUT_RST=0,C_USE_EMBEDDED_REG=0,C_EN_SAFETY_CKT=0,C_USE_FWFT_DATA_COUNT=0,C_VALID_LOW=0,C_WR_ACK_LOW=0,C_WR_DATA_COUNT_WIDTH=10,C_WR_DEPTH=1024,C_WR_PNTR_WIDTH=10,C_USE_ECC=0,C_ENABLE_RST_SYNC=1,C_ERROR_INJECTION_TYPE=0,C_SYNCHRONIZER_STAGE=2) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.v" Line 70. Module PLL has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_clk_wiz.v" Line 68. Module PLL_clk_wiz has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/continuous/2016_12_14_1733598/data/verilog/src/unisims/IBUF.v" Line 30. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/continuous/2016_12_14_1733598/data/verilog/src/unisims/PLLE2_ADV.v" Line 48. Module PLLE2_ADV(CLKFBOUT_MULT=18,CLKIN1_PERIOD=20.0,CLKOUT0_DIVIDE=9) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/continuous/2016_12_14_1733598/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/continuous/2016_12_14_1733598/data/verilog/src/unisims/BUFG.v" Line 26. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/sim/ROM.v" Line 56. Module ROM has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 3412. Module blk_mem_gen_v8_3_5(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=4,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=1,C_INIT_FILE_NAME="ROM.mif",C_INIT_FILE="ROM.mem",C_HAS_ENA=0,C_WRITE_WIDTH_A=14,C_READ_WIDTH_A=14,C_WRITE_DEPTH_A=1024,C_READ_DEPTH_A=1024,C_ADDRA_WIDTH=10,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=14,C_READ_WIDTH_B=14,C_WRITE_DEPTH_B=1024,C_READ_DEPTH_B=1024,C_ADDRB_WIDTH=10,C_HAS_MEM_OUTPUT_REGS_A=1,C_HAS_MEM_OUTPUT_REGS_B=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="0",C_COUNT_18K_BRAM="1",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____2.6263999999999998_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 1951. Module blk_mem_gen_v8_3_5_mem_module(C_CORENAME="blk_mem_gen_v8_3_5",C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_MEM_TYPE=4,C_BYTE_SIZE=9,C_USE_BRAM_BLOCK=0,C_ALGORITHM=1,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=1,C_INIT_FILE_NAME="ROM.mif",C_INIT_FILE="ROM.mem",C_USE_DEFAULT_DATA=0,C_DEFAULT_DATA="0",C_HAS_RSTA=0,C_RST_PRIORITY_A="CE",C_RSTRAM_A=0,C_INITA_VAL="0",C_HAS_ENA=0,C_HAS_REGCEA=0,C_USE_BYTE_WEA=0,C_WEA_WIDTH=1,C_WRITE_MODE_A="WRITE_FIRST",C_WRITE_WIDTH_A=14,C_READ_WIDTH_A=14,C_WRITE_DEPTH_A=1024,C_READ_DEPTH_A=1024,C_ADDRA_WIDTH=10,C_HAS_RSTB=0,C_RST_PRIORITY_B="CE",C_RSTRAM_B=0,C_INITB_VAL="0",C_HAS_ENB=0,C_HAS_REGCEB=0,C_USE_BYTE_WEB=0,C_WEB_WIDTH=1,C_WRITE_MODE_B="WRITE_FIRST",C_WRITE_WIDTH_B=14,C_READ_WIDTH_B=14,C_WRITE_DEPTH_B=1024,C_READ_DEPTH_B=1024,C_ADDRB_WIDTH=10,C_HAS_MEM_OUTPUT_REGS_A=1,C_HAS_MEM_OUTPUT_REGS_B=1,C_HAS_MUX_OUTPUT_REGS_A=0,C_HAS_MUX_OUTPUT_REGS_B=0,C_HAS_SOFTECC_INPUT_REGS_A=0,C_HAS_SOFTECC_OUTPUT_REGS_B=0,C_MUX_PIPELINE_STAGES=0,C_USE_SOFTECC=0,C_USE_ECC=0,C_HAS_INJECTERR=0,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,FLOP_DELAY=100,C_DISABLE_WARN_BHV_COLL=0,C_EN_ECC_PIPE=0,C_DISABLE_WARN_BHV_RANGE=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 1563. Module blk_mem_gen_v8_3_5_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_HAS_RST=0,C_RSTRAM=0,C_RST_PRIORITY="CE",C_INIT_VAL="0",C_HAS_EN=0,C_HAS_REGCE=0,C_DATA_WIDTH=14,C_ADDRB_WIDTH=10,C_HAS_MEM_OUTPUT_REGS=1,C_USE_SOFTECC=0,C_USE_ECC=0,NUM_STAGES=1,FLOP_DELAY=100) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 1563. Module blk_mem_gen_v8_3_5_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_HAS_RST=0,C_RSTRAM=0,C_RST_PRIORITY="CE",C_INIT_VAL="0",C_HAS_EN=0,C_HAS_REGCE=0,C_DATA_WIDTH=14,C_ADDRB_WIDTH=10,C_HAS_MEM_OUTPUT_REGS=1,C_USE_SOFTECC=0,C_USE_ECC=0,NUM_STAGES=1,C_EN_ECC_PIPE=0,FLOP_DELAY=100) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 1859. Module blk_mem_gen_v8_3_5_softecc_output_reg_stage(C_DATA_WIDTH=14,C_ADDRB_WIDTH=10,C_HAS_SOFTECC_OUTPUT_REGS_B=0,C_USE_SOFTECC=0,FLOP_DELAY=100) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" Line 1493. Module blk_mem_axi_regs_fwd_v8_3(C_DATA_WIDTH=7) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" Line 56. Module FIFO has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/hdl/fifo_generator_v13_1_rfs.v" Line 1. Module fifo_generator_v13_1_3(C_DATA_COUNT_WIDTH=10,C_DEFAULT_VALUE="BlankString",C_DIN_WIDTH=32,C_DOUT_RST_VAL="0",C_DOUT_WIDTH=32,C_FAMILY="artix7",C_FULL_FLAGS_RST_VAL=0,C_HAS_RD_DATA_COUNT=1,C_HAS_RST=0,C_HAS_WR_DATA_COUNT=1,C_IMPLEMENTATION_TYPE=2,C_MIF_FILE_NAME="BlankString",C_PRIM_FIFO_TYPE="1kx36",C_PROG_EMPTY_THRESH_ASSERT_VAL=2,C_PROG_EMPTY_THRESH_NEGATE_VAL=3,C_PROG_FULL_THRESH_ASSERT_VAL=1021,C_PROG_FULL_THRESH_NEGATE_VAL=1020,C_RD_DATA_COUNT_WIDTH=10,C_RD_DEPTH=1024,C_RD_PNTR_WIDTH=10,C_WR_DATA_COUNT_WIDTH=10,C_WR_DEPTH=1024,C_WR_PNTR_WIDTH=10,C_AXI_TYPE=1,C_HAS_AXI_WR_CHANNEL=1,C_HAS_AXI_RD_CHANNEL=1,C_AXI_ID_WIDTH=1,C_AXI_LOCK_WIDTH=1,C_HAS_AXIS_TDATA=1,C_HAS_AXIS_TUSER=1,C_AXIS_TDATA_WIDTH=8,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_AXIS_TSTRB_WIDTH=1,C_AXIS_TKEEP_WIDTH=1,C_PRIM_FIFO_TYPE_WDCH="1kx36",C_PRIM_FIFO_TYPE_RDCH="1kx36",C_PRIM_FIFO_TYPE_AXIS="1kx18",C_DIN_WIDTH_WACH=1,C_PROG_FULL_TYPE_WACH=0,C_PROG_FULL_TYPE_WDCH=0,C_PROG_FULL_TYPE_WRCH=0,C_PROG_FULL_TYPE_RACH=0,C_PROG_FULL_TYPE_RDCH=0,C_PROG_FULL_TYPE_AXIS=0,C_PROG_EMPTY_TYPE_WACH=0,C_PROG_EMPTY_TYPE_WDCH=0,C_PROG_EMPTY_TYPE_WRCH=0,C_PROG_EMPTY_TYPE_RACH=0,C_PROG_EMPTY_TYPE_RDCH=0,C_PROG_EMPTY_TYPE_AXIS=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 98. Module fifo_generator_vlog_beh(C_COMMON_CLOCK=0,C_COUNT_TYPE=0,C_DATA_COUNT_WIDTH=10,C_DEFAULT_VALUE="BlankString",C_DIN_WIDTH=32,C_DOUT_RST_VAL="0",C_DOUT_WIDTH=32,C_ENABLE_RLOCS=0,C_FAMILY="artix7",C_FULL_FLAGS_RST_VAL=0,C_HAS_ALMOST_EMPTY=0,C_HAS_ALMOST_FULL=0,C_HAS_BACKUP=0,C_HAS_DATA_COUNT=0,C_HAS_INT_CLK=0,C_HAS_MEMINIT_FILE=0,C_HAS_OVERFLOW=0,C_HAS_RD_DATA_COUNT=1,C_HAS_RD_RST=0,C_HAS_RST=0,C_HAS_SRST=0,C_HAS_UNDERFLOW=0,C_HAS_VALID=0,C_HAS_WR_ACK=0,C_HAS_WR_DATA_COUNT=1,C_HAS_WR_RST=0,C_IMPLEMENTATION_TYPE=2,C_INIT_WR_PNTR_VAL=0,C_MEMORY_TYPE=1,C_MIF_FILE_NAME="BlankString",C_OPTIMIZATION_MODE=0,C_OVERFLOW_LOW=0,C_EN_SAFETY_CKT=0,C_PRELOAD_LATENCY=1,C_PRELOAD_REGS=0,C_PRIM_FIFO_TYPE="1kx36",C_PROG_EMPTY_THRESH_ASSERT_VAL=2,C_PROG_EMPTY_THRESH_NEGATE_VAL=3,C_PROG_EMPTY_TYPE=0,C_PROG_FULL_THRESH_ASSERT_VAL=1021,C_PROG_FULL_THRESH_NEGATE_VAL=1020,C_PROG_FULL_TYPE=0,C_RD_DATA_COUNT_WIDTH=10,C_RD_DEPTH=1024,C_RD_FREQ=1,C_RD_PNTR_WIDTH=10,C_UNDERFLOW_LOW=0,C_USE_DOUT_RST=0,C_USE_ECC=0,C_USE_EMBEDDED_REG=0,C_USE_PIPELINE_REG=0,C_POWER_SAVING_MODE=0,C_USE_FIFO16_FLAGS=0,C_USE_FWFT_DATA_COUNT=0,C_VALID_LOW=0,C_WR_ACK_LOW=0,C_WR_DATA_COUNT_WIDTH=10,C_WR_DEPTH=1024,C_WR_FREQ=1,C_WR_PNTR_WIDTH=10,C_WR_RESPONSE_LATENCY=1,C_MSGON_VAL=1,C_ENABLE_RST_SYNC=1,C_ERROR_INJECTION_TYPE=0,C_SYNCHRONIZER_STAGE=2,C_INTERFACE_TYPE=0,C_AXI_TYPE=1,C_HAS_AXI_WR_CHANNEL=1,C_HAS_AXI_RD_CHANNEL=1,C_HAS_SLAVE_CE=0,C_HAS_MASTER_CE=0,C_ADD_NGC_CONSTRAINT=0,C_USE_COMMON_UNDERFLOW=0,C_USE_COMMON_OVERFLOW=0,C_USE_DEFAULT_SETTINGS=0,C_AXI_ID_WIDTH=1,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_WIDTH=64,C_AXI_LEN_WIDTH=8,C_AXI_LOCK_WIDTH=1,C_HAS_AXI_ID=0,C_HAS_AXI_AWUSER=0,C_HAS_AXI_WUSER=0,C_HAS_AXI_BUSER=0,C_HAS_AXI_ARUSER=0,C_HAS_AXI_RUSER=0,C_AXI_ARUSER_WIDTH=1,C_AXI_AWUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_HAS_AXIS_TDATA=1,C_HAS_AXIS_TID=0,C_HAS_AXIS_TDEST=0,C_HAS_AXIS_TUSER=1,C_HAS_AXIS_TREADY=1,C_HAS_AXIS_TLAST=0,C_HAS_AXIS_TSTRB=0,C_HAS_AXIS_TKEEP=0,C_AXIS_TDATA_WIDTH=8,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_AXIS_TUSER_WIDTH=4,C_AXIS_TSTRB_WIDTH=1,C_AXIS_TKEEP_WIDTH=1,C_WACH_TYPE=0,C_WDCH_TYPE=0,C_WRCH_TYPE=0,C_RACH_TYPE=0,C_RDCH_TYPE=0,C_AXIS_TYPE=0,C_IMPLEMENTATION_TYPE_WACH=1,C_IMPLEMENTATION_TYPE_WDCH=1,C_IMPLEMENTATION_TYPE_WRCH=1,C_IMPLEMENTATION_TYPE_RACH=1,C_IMPLEMENTATION_TYPE_RDCH=1,C_IMPLEMENTATION_TYPE_AXIS=1,C_APPLICATION_TYPE_WACH=0,C_APPLICATION_TYPE_WDCH=0,C_APPLICATION_TYPE_WRCH=0,C_APPLICATION_TYPE_RACH=0,C_APPLICATION_TYPE_RDCH=0,C_APPLICATION_TYPE_AXIS=0,C_PRIM_FIFO_TYPE_WACH="512x36",C_PRIM_FIFO_TYPE_WDCH="1kx36",C_PRIM_FIFO_TYPE_WRCH="512x36",C_PRIM_FIFO_TYPE_RACH="512x36",C_PRIM_FIFO_TYPE_RDCH="1kx36",C_PRIM_FIFO_TYPE_AXIS="1kx18",C_USE_ECC_WACH=0,C_USE_ECC_WDCH=0,C_USE_ECC_WRCH=0,C_USE_ECC_RACH=0,C_USE_ECC_RDCH=0,C_USE_ECC_AXIS=0,C_ERROR_INJECTION_TYPE_WACH=0,C_ERROR_INJECTION_TYPE_WDCH=0,C_ERROR_INJECTION_TYPE_WRCH=0,C_ERROR_INJECTION_TYPE_RACH=0,C_ERROR_INJECTION_TYPE_RDCH=0,C_ERROR_INJECTION_TYPE_AXIS=0,C_DIN_WIDTH_WACH=1,C_DIN_WIDTH_WDCH=64,C_DIN_WIDTH_WRCH=2,C_DIN_WIDTH_RACH=32,C_DIN_WIDTH_RDCH=64,C_DIN_WIDTH_AXIS=1,C_WR_DEPTH_WACH=16,C_WR_DEPTH_WDCH=1024,C_WR_DEPTH_WRCH=16,C_WR_DEPTH_RACH=16,C_WR_DEPTH_RDCH=1024,C_WR_DEPTH_AXIS=1024,C_WR_PNTR_WIDTH_WACH=4,C_WR_PNTR_WIDTH_WDCH=10,C_WR_PNTR_WIDTH_WRCH=4,C_WR_PNTR_WIDTH_RACH=4,C_WR_PNTR_WIDTH_RDCH=10,C_WR_PNTR_WIDTH_AXIS=10,C_HAS_DATA_COUNTS_WACH=0,C_HAS_DATA_COUNTS_WDCH=0,C_HAS_DATA_COUNTS_WRCH=0,C_HAS_DATA_COUNTS_RACH=0,C_HAS_DATA_COUNTS_RDCH=0,C_HAS_DATA_COUNTS_AXIS=0,C_PROG_FULL_TYPE_WACH=0,C_PROG_FULL_TYPE_WDCH=0,C_PROG_FULL_TYPE_WRCH=0,C_PROG_FULL_TYPE_RACH=0,C_PROG_FULL_TYPE_RDCH=0,C_PROG_FULL_TYPE_AXIS=0,C_PROG_FULL_THRESH_ASSERT_VAL_WACH=1023,C_PROG_FULL_THRESH_ASSERT_VAL_WDCH=1023,C_PROG_FULL_THRESH_ASSERT_VAL_WRCH=1023,C_PROG_FULL_THRESH_ASSERT_VAL_RACH=1023,C_PROG_FULL_THRESH_ASSERT_VAL_RDCH=1023,C_PROG_FULL_THRESH_ASSERT_VAL_AXIS=1023,C_PROG_EMPTY_TYPE_WACH=0,C_PROG_EMPTY_TYPE_WDCH=0,C_PROG_EMPTY_TYPE_WRCH=0,C_PROG_EMPTY_TYPE_RACH=0,C_PROG_EMPTY_TYPE_RDCH=0,C_PROG_EMPTY_TYPE_AXIS=0,C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH=1022,C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH=1022,C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH=1022,C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH=1022,C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH=1022,C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS=1022,C_REG_SLICE_MODE_WACH=0,C_REG_SLICE_MODE_WDCH=0,C_REG_SLICE_MODE_WRCH=0,C_REG_SLICE_MODE_RACH=0,C_REG_SLICE_MODE_RDCH=0,C_REG_SLICE_MODE_AXIS=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 3366. Module fifo_generator_v13_1_3_CONV_VER(C_COMMON_CLOCK=0,C_INTERFACE_TYPE=0,C_EN_SAFETY_CKT=0,C_COUNT_TYPE=0,C_DATA_COUNT_WIDTH=10,C_DEFAULT_VALUE="BlankString",C_DIN_WIDTH=32,C_DOUT_RST_VAL=32'b0,C_DOUT_WIDTH=32,C_ENABLE_RLOCS=0,C_FAMILY="artix7",C_FULL_FLAGS_RST_VAL=0,C_HAS_ALMOST_EMPTY=0,C_HAS_ALMOST_FULL=0,C_HAS_BACKUP=0,C_HAS_DATA_COUNT=0,C_HAS_INT_CLK=0,C_HAS_MEMINIT_FILE=0,C_HAS_OVERFLOW=0,C_HAS_RD_DATA_COUNT=1,C_HAS_RD_RST=0,C_HAS_RST=0,C_HAS_SRST=0,C_HAS_UNDERFLOW=0,C_HAS_VALID=0,C_HAS_WR_ACK=0,C_HAS_WR_DATA_COUNT=1,C_HAS_WR_RST=0,C_IMPLEMENTATION_TYPE=2,C_INIT_WR_PNTR_VAL=0,C_MEMORY_TYPE=1,C_MIF_FILE_NAME="BlankString",C_OPTIMIZATION_MODE=0,C_OVERFLOW_LOW=0,C_PRELOAD_LATENCY=1,C_PRELOAD_REGS=0,C_PRIM_FIFO_TYPE="1kx36",C_PROG_EMPTY_THRESH_ASSERT_VAL=2,C_PROG_EMPTY_THRESH_NEGATE_VAL=3,C_PROG_EMPTY_TYPE=0,C_PROG_FULL_THRESH_ASSERT_VAL=1021,C_PROG_FULL_THRESH_NEGATE_VAL=1020,C_PROG_FULL_TYPE=0,C_RD_DATA_COUNT_WIDTH=10,C_RD_DEPTH=1024,C_RD_FREQ=1,C_RD_PNTR_WIDTH=10,C_UNDERFLOW_LOW=0,C_USE_DOUT_RST=0,C_USE_ECC=0,C_USE_EMBEDDED_REG=0,C_USE_FIFO16_FLAGS=0,C_USE_FWFT_DATA_COUNT=0,C_VALID_LOW=0,C_WR_ACK_LOW=0,C_WR_DATA_COUNT_WIDTH=10,C_WR_DEPTH=1024,C_WR_FREQ=1,C_WR_PNTR_WIDTH=10,C_WR_RESPONSE_LATENCY=1,C_MSGON_VAL=1,C_ENABLE_RST_SYNC=1,C_ERROR_INJECTION_TYPE=0,C_SYNCHRONIZER_STAGE=2,C_AXI_TYPE=1) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5056. Module fifo_generator_v13_1_3_bhv_ver_as(C_FAMILY="artix7",C_DATA_COUNT_WIDTH=10,C_DIN_WIDTH=32,C_DOUT_RST_VAL=32'b0,C_DOUT_WIDTH=32,C_FULL_FLAGS_RST_VAL=0,C_HAS_ALMOST_EMPTY=0,C_HAS_ALMOST_FULL=0,C_HAS_DATA_COUNT=0,C_HAS_OVERFLOW=0,C_HAS_RD_DATA_COUNT=1,C_HAS_RST=0,C_HAS_UNDERFLOW=0,C_HAS_VALID=0,C_HAS_WR_ACK=0,C_HAS_WR_DATA_COUNT=1,C_IMPLEMENTATION_TYPE=2,C_MEMORY_TYPE=1,C_OVERFLOW_LOW=0,C_PRELOAD_LATENCY=1,C_PRELOAD_REGS=0,C_PROG_EMPTY_THRESH_ASSERT_VAL=2,C_PROG_EMPTY_THRESH_NEGATE_VAL=3,C_PROG_EMPTY_TYPE=0,C_PROG_FULL_THRESH_ASSERT_VAL=1021,C_PROG_FULL_THRESH_NEGATE_VAL=1020,C_PROG_FULL_TYPE=0,C_RD_DATA_COUNT_WIDTH=10,C_RD_DEPTH=1024,C_RD_PNTR_WIDTH=10,C_UNDERFLOW_LOW=0,C_USE_DOUT_RST=0,C_USE_EMBEDDED_REG=0,C_EN_SAFETY_CKT=0,C_USE_FWFT_DATA_COUNT=0,C_VALID_LOW=0,C_WR_ACK_LOW=0,C_WR_DATA_COUNT_WIDTH=10,C_WR_DEPTH=1024,C_WR_PNTR_WIDTH=10,C_USE_ECC=0,C_ENABLE_RST_SYNC=1,C_ERROR_INJECTION_TYPE=0,C_SYNCHRONIZER_STAGE=2) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v" Line 5035. Module fifo_generator_v13_1_3_sync_stage(C_WIDTH=10) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package xfft_v9_0_11.xfft_v9_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_3.axi_utils_v2_0_3_pkg
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_pkg
+Compiling package ieee.std_logic_signed
+Compiling package cmpy_v6_0_12.cmpy_v6_0_12_pkg
+Compiling package floating_point_v7_0_13.floating_point_v7_0_13_consts
+Compiling package floating_point_v7_0_13.floating_point_v7_0_13_exp_table...
+Compiling package floating_point_v7_0_13.floating_point_v7_0_13_pkg
+Compiling package xfft_v9_0_11.pkg
+Compiling package xfft_v9_0_11.xfft_v9_0_11_axi_pkg
+Compiling package axi_utils_v2_0_3.global_util_pkg
+Compiling package axi_utils_v2_0_3.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package xbip_addsub_v3_0_3.xbip_addsub_v3_0_3_viv_comp
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg_legacy
+Compiling package c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv_comp
+Compiling package c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_pkg
+Compiling package c_mux_bit_v12_0_3.c_mux_bit_v12_0_3_viv_comp
+Compiling package xfft_v9_0_11.half_sincos_tw_table
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=18,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.PLL_clk_wiz
+Compiling module xil_defaultlib.PLL
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_axi_regs_fwd_v8_3(C_DATA...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5(C_FAMILY="art...
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.test_wave
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=1,has_uvprot...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_slave [\glb_ifx_slave(width=1,has_uvpro...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=29,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_slave [\glb_ifx_slave(width=29,has_uvpr...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=61,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_master [\glb_ifx_master(width=61,afull_t...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_output_fifo [\axi_wrapper_output_fifo(c_fifo_...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper [\axi_wrapper(c_nfft_max=10,c_arc...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,ram_mode="SD...]
+Compiling architecture ramb18sdp_v of entity unisim.RAMB18SDP [\RAMB18SDP(do_reg=1,sim_collisio...]
+Compiling architecture xilinx of entity xfft_v9_0_11.dpm [\dpm(c_xdevicefamily="artix7",wi...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus4 [\mux_bus4(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.in_switch4 [\in_switch4(c_xdevicefamily="art...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=30...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.adder_bypass [\adder_bypass(c_xdevicefamily="a...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=30...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.sub_byp [\sub_byp(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.bfly_byp [\bfly_byp(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.sub_byp_j [\sub_byp_j(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.bfly_byp_j [\bfly_byp_j(c_xdevicefamily="art...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=31...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.adder [\adder(c_xdevicefamily="artix7",...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.subtracter [\subtracter(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.butterfly [\butterfly(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.dfly_byp [\dfly_byp(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,carryinselreg=0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,adreg=0,areg...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_width=25,bi_width=...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:1957]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:1958]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:1959]
+Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_4_dsp48_mult [\cmpy_4_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_4_dsp48 [\cmpy_4_dsp48(c_xdevicefamily="a...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_v6_0_12_synth [\cmpy_v6_0_12_synth(c_xdevicefam...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cmpy [\cmpy(c_xdevicefamily="artix7",a...]
+Compiling architecture xilinx of entity xfft_v9_0_11.pe4 [\pe4(c_xdevicefamily="artix7",io...]
+Compiling architecture xilinx of entity xfft_v9_0_11.out_switch4 [\out_switch4(c_xdevicefamily="ar...]
+Compiling architecture xilinx of entity xfft_v9_0_11.r4_datapath [\r4_datapath(c_xdevicefamily="ar...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture xilinx of entity xfft_v9_0_11.reg_rs_rtl [reg_rs_rtl_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.flow_control_b [\flow_control_b(c_xdevicefamily=...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_sync_pri...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus4 [\mux_bus4(c_xdevicefamily="artix...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus8 [\mux_bus8(c_xdevicefamily="artix...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11001010")(0,7)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.xor_bit_gate [\xor_bit_gate(c_inputs=4)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.xor_bit_gate [\xor_bit_gate(c_inputs=14)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=9,...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.subtracter [\subtracter(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.rw_addr_gen_b [\rw_addr_gen_b(c_xdevicefamily="...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.out_addr_gen_b [\out_addr_gen_b(c_xdevicefamily=...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus8 [\mux_bus8(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus4 [\mux_bus4(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus8 [\mux_bus8(c_xdevicefamily="artix...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.tw_gen_p4 [\tw_gen_p4(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.tw_addr_gen [\tw_addr_gen(c_xdevicefamily="ar...]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture xilinx of entity xfft_v9_0_11.twgen_half_sincos [\twgen_half_sincos(c_xdevicefami...]
+Compiling architecture xilinx of entity xfft_v9_0_11.twiddle_gen [\twiddle_gen(c_xdevicefamily="ar...]
+Compiling architecture xilinx of entity xfft_v9_0_11.r4_control [\r4_control(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.xfft_v9_0_11_b [\xfft_v9_0_11_b(c_xdevicefamily=...]
+Compiling architecture synth of entity xfft_v9_0_11.xfft_v9_0_11_core [\xfft_v9_0_11_core(c_xdevicefami...]
+Compiling architecture synth of entity xfft_v9_0_11.xfft_v9_0_11_viv [\xfft_v9_0_11_viv(c_xdevicefamil...]
+Compiling architecture xilinx of entity xfft_v9_0_11.xfft_v9_0_11 [\xfft_v9_0_11(c_xdevicefamily="a...]
+Compiling architecture fft_arch of entity xil_defaultlib.FFT [fft_default]
+Compiling module xil_defaultlib.FFT_Control
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.TOP
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:01:49 . Memory (MB): peak = 903.184 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '110' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_behav -key {Behavioral:sim_1:Functional:TOP} -tclbatch {TOP.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source TOP.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module TOP.test_wave_inst1.ROM_inst0.inst.native_mem_module.blk_mem_gen_v8_3_5_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:01:55 . Memory (MB): peak = 965.672 ; gain = 62.488
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_TOP.v
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci' is already up-to-date
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library work [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v:1]
+[Wed Nov 29 00:02:26 2017] Launched synth_1...
+Run output will be captured here: E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.runs/synth_1/runme.log
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/TOP_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/xelab.pb
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Softwares/Vivado/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_TOP' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/ROM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/cos_14_1024_signed.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_TOP_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FIFO/FIFO/sim/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/sim/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/PLL/PLL/PLL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PLL
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_wave
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT_Control
+INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tlast, assumed default net type wire [E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v:107]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_TOP_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/FFT/FFT/sim/FFT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FFT
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Softwares/Vivado/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 63a46008f5d845f7b87a208ca3c1b077 --debug typical --relax --mt 2 -L fifo_generator_v13_1_3 -L xil_defaultlib -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L c_reg_fd_v12_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_3 -L xbip_dsp48_addsub_v3_0_3 -L xbip_addsub_v3_0_3 -L c_addsub_v12_0_10 -L c_mux_bit_v12_0_3 -L c_shift_ram_v12_0_10 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L cmpy_v6_0_12 -L floating_point_v7_0_13 -L xfft_v9_0_11 -L blk_mem_gen_v8_3_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_TOP_behav xil_defaultlib.tb_TOP xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" Line 1. Module TOP doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v" Line 1. Module test_wave doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v" Line 1. Module FFT_Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v" Line 7. Module FIFO_Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" Line 1. Module uart_tx doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/TOP.v" Line 1. Module TOP doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v" Line 1. Module test_wave doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FFT_Control.v" Line 1. Module FFT_Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/FIFO_Control.v" Line 7. Module FIFO_Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/uart_tx.v" Line 1. Module uart_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package xfft_v9_0_11.xfft_v9_0_11_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_3.axi_utils_v2_0_3_pkg
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_pkg
+Compiling package ieee.std_logic_signed
+Compiling package cmpy_v6_0_12.cmpy_v6_0_12_pkg
+Compiling package floating_point_v7_0_13.floating_point_v7_0_13_consts
+Compiling package floating_point_v7_0_13.floating_point_v7_0_13_exp_table...
+Compiling package floating_point_v7_0_13.floating_point_v7_0_13_pkg
+Compiling package xfft_v9_0_11.pkg
+Compiling package xfft_v9_0_11.xfft_v9_0_11_axi_pkg
+Compiling package axi_utils_v2_0_3.global_util_pkg
+Compiling package axi_utils_v2_0_3.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package xbip_addsub_v3_0_3.xbip_addsub_v3_0_3_viv_comp
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg_legacy
+Compiling package c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv_comp
+Compiling package c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_pkg
+Compiling package c_mux_bit_v12_0_3.c_mux_bit_v12_0_3_viv_comp
+Compiling package xfft_v9_0_11.half_sincos_tw_table
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=18,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.PLL_clk_wiz
+Compiling module xil_defaultlib.PLL
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_output_stage(...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_axi_regs_fwd_v8_3(C_DATA...
+Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5(C_FAMILY="art...
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.test_wave
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=1,has_uvprot...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_slave [\glb_ifx_slave(width=1,has_uvpro...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=29,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_slave [\glb_ifx_slave(width=29,has_uvpr...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_input_fifo [\axi_wrapper_input_fifo(c_fifo_w...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_srl_fifo [\glb_srl_fifo(width=61,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_3.glb_ifx_master [\glb_ifx_master(width=61,afull_t...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper_output_fifo [\axi_wrapper_output_fifo(c_fifo_...]
+Compiling architecture synth of entity xfft_v9_0_11.axi_wrapper [\axi_wrapper(c_nfft_max=10,c_arc...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,ram_mode="SD...]
+Compiling architecture ramb18sdp_v of entity unisim.RAMB18SDP [\RAMB18SDP(do_reg=1,sim_collisio...]
+Compiling architecture xilinx of entity xfft_v9_0_11.dpm [\dpm(c_xdevicefamily="artix7",wi...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus4 [\mux_bus4(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.in_switch4 [\in_switch4(c_xdevicefamily="art...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=30...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.adder_bypass [\adder_bypass(c_xdevicefamily="a...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=30...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.sub_byp [\sub_byp(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.bfly_byp [\bfly_byp(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.sub_byp_j [\sub_byp_j(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.bfly_byp_j [\bfly_byp_j(c_xdevicefamily="art...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=31...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.adder [\adder(c_xdevicefamily="artix7",...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.subtracter [\subtracter(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.butterfly [\butterfly(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.dfly_byp [\dfly_byp(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,carryinselreg=0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,adreg=0,areg...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.delay_line [\delay_line(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_width=25,bi_width=...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:1957]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:1958]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2016.4/nightly/2016_12_14_1733598/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:1959]
+Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_4_dsp48_mult [\cmpy_4_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_4_dsp48 [\cmpy_4_dsp48(c_xdevicefamily="a...]
+Compiling architecture xilinx of entity cmpy_v6_0_12.cmpy_v6_0_12_synth [\cmpy_v6_0_12_synth(c_xdevicefam...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cmpy [\cmpy(c_xdevicefamily="artix7",a...]
+Compiling architecture xilinx of entity xfft_v9_0_11.pe4 [\pe4(c_xdevicefamily="artix7",io...]
+Compiling architecture xilinx of entity xfft_v9_0_11.out_switch4 [\out_switch4(c_xdevicefamily="ar...]
+Compiling architecture xilinx of entity xfft_v9_0_11.r4_datapath [\r4_datapath(c_xdevicefamily="ar...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture xilinx of entity xfft_v9_0_11.reg_rs_rtl [reg_rs_rtl_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.equ_rtl [\equ_rtl(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity xfft_v9_0_11.cnt_tc_rtl [\cnt_tc_rtl(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.flow_control_b [\flow_control_b(c_xdevicefamily=...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_sync_pri...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture struct of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_legacy [\c_shift_ram_v12_0_10_legacy(c_x...]
+Compiling architecture synth of entity c_shift_ram_v12_0_10.c_shift_ram_v12_0_10_viv [\c_shift_ram_v12_0_10_viv(c_xdev...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus4 [\mux_bus4(c_xdevicefamily="artix...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus8 [\mux_bus8(c_xdevicefamily="artix...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11001010")(0,7)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.xor_bit_gate [\xor_bit_gate(c_inputs=4)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.xor_bit_gate [\xor_bit_gate(c_inputs=14)\]
+Compiling architecture xilinx of entity xfft_v9_0_11.shift_ram [\shift_ram(c_xdevicefamily="arti...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=9,...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.subtracter [\subtracter(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.rw_addr_gen_b [\rw_addr_gen_b(c_xdevicefamily="...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus2 [\mux_bus2(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.out_addr_gen_b [\out_addr_gen_b(c_xdevicefamily=...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus8 [\mux_bus8(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus4 [\mux_bus4(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity xfft_v9_0_11.mux_bus8 [\mux_bus8(c_xdevicefamily="artix...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity xfft_v9_0_11.tw_gen_p4 [\tw_gen_p4(c_xdevicefamily="arti...]
+Compiling architecture xilinx of entity xfft_v9_0_11.tw_addr_gen [\tw_addr_gen(c_xdevicefamily="ar...]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture xilinx of entity xfft_v9_0_11.twgen_half_sincos [\twgen_half_sincos(c_xdevicefami...]
+Compiling architecture xilinx of entity xfft_v9_0_11.twiddle_gen [\twiddle_gen(c_xdevicefamily="ar...]
+Compiling architecture xilinx of entity xfft_v9_0_11.r4_control [\r4_control(c_xdevicefamily="art...]
+Compiling architecture xilinx of entity xfft_v9_0_11.xfft_v9_0_11_b [\xfft_v9_0_11_b(c_xdevicefamily=...]
+Compiling architecture synth of entity xfft_v9_0_11.xfft_v9_0_11_core [\xfft_v9_0_11_core(c_xdevicefami...]
+Compiling architecture synth of entity xfft_v9_0_11.xfft_v9_0_11_viv [\xfft_v9_0_11_viv(c_xdevicefamil...]
+Compiling architecture xilinx of entity xfft_v9_0_11.xfft_v9_0_11 [\xfft_v9_0_11(c_xdevicefamily="a...]
+Compiling architecture fft_arch of entity xil_defaultlib.FFT [fft_default]
+Compiling module xil_defaultlib.FFT_Control
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_sync_stag...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_bhv_ver_a...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3_CONV_VER(...
+Compiling module fifo_generator_v13_1_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_1_3.fifo_generator_v13_1_3(C_DATA_CO...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_Control
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.TOP
+Compiling module xil_defaultlib.tb_TOP
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_TOP_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:01:41 . Memory (MB): peak = 965.672 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '101' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_TOP_behav -key {Behavioral:sim_1:Functional:tb_TOP} -tclbatch {tb_TOP.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source tb_TOP.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_TOP.TOP_inst0.test_wave_inst1.ROM_inst0.inst.native_mem_module.blk_mem_gen_v8_3_5_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_TOP_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:01:46 . Memory (MB): peak = 965.672 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_wave {{/tb_TOP/TOP_inst0/PLL_inst0/clk_out1}} 
+add_wave {{/tb_TOP/TOP_inst0/test_wave_inst1/data_out}} 
+add_wave {{/tb_TOP/TOP_inst0/FFT_Control_inst2/s_axis_data_tdata}} 
+add_wave {{/tb_TOP/TOP_inst0/FFT_Control_inst2/data_out_re}} 
+add_wave {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/wr_clk}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/rd_clk}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/data_valid}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/rx_ready}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/data_re}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/tx_ready}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/uart_en}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/data_out}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/current_state}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/next_state}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/wr_en}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/rd_en}} 
+add_wave {{/tb_TOP/TOP_inst0/uart_tx_inst5/data}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/uart_en}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/rd_clk}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/tx}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/clk_bps}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/uart_tx}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/num}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/tx_data}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/flag_nege}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/num_r}} 
+run 1 ms
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_TOP.TOP_inst0.test_wave_inst1.ROM_inst0.inst.native_mem_module.blk_mem_gen_v8_3_5_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+run: Time (s): cpu = 00:00:22 ; elapsed = 00:03:16 . Memory (MB): peak = 968.863 ; gain = 0.000

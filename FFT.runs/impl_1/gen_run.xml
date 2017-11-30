@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1511860081">
-  <File Type="PLACE-DCP" Name="TOP_placed.dcp"/>
-  <File Type="PA-DCP" Name="TOP.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1511892643">
+  <File Type="PWROPT-DRC" Name="TOP_drc_pwropted.rpt"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="TOP_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="TOP_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="TOP_power_routed.rpx"/>
@@ -12,8 +11,8 @@
   <File Type="OPT-DRC" Name="TOP_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="TOP_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="TOP_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="TOP_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="TOP_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="TOP_placed.dcp"/>
   <File Type="PLACE-IO" Name="TOP_io_placed.rpt"/>
   <File Type="PLACE-CLK" Name="TOP_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="TOP_utilization_placed.rpt"/>
@@ -63,7 +62,14 @@
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/Design/Code/AD.v">
+    <File Path="$PPRDIR/Design/IP_Core/ROM/ROM/ROM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Design/Code/test_wave.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -93,6 +99,14 @@
     </File>
     <File Path="$PPRDIR/Design/Code/TOP.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Design/Code/AD.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

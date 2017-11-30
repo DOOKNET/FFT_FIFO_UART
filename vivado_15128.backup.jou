@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Nov 28 23:43:12 2017
+# Process ID: 15128
+# Current directory: E:/Workspace/Vivado_16.4/2017_11_5_FFT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2732 E:\Workspace\Vivado_16.4\2017_11_5_FFT\FFT.xpr
+# Log file: E:/Workspace/Vivado_16.4/2017_11_5_FFT/vivado.log
+# Journal file: E:/Workspace/Vivado_16.4/2017_11_5_FFT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.xpradd_files -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci
+export_ip_user_files -of_objects  [get_files  E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/IP_Core/ROM/ROM/ROM.xci] -lib_map_path [list {modelsim=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/modelsim} {questa=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/questa} {riviera=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/riviera} {activehdl=E:/Workspace/Vivado_16.4/2017_11_5_FFT/FFT.cache/compile_simlib/activehdl}] -force -quiet
+add_files -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/Design/Code/test_wave.v
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source TOP.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse E:/Workspace/Vivado_16.4/2017_11_5_FFT/TestBeach/tb_TOP.v
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source tb_TOP.tcl
+restart
+add_wave {{/tb_TOP/TOP_inst0/PLL_inst0/clk_out1}} 
+add_wave {{/tb_TOP/TOP_inst0/test_wave_inst1/data_out}} 
+add_wave {{/tb_TOP/TOP_inst0/FFT_Control_inst2/s_axis_data_tdata}} 
+add_wave {{/tb_TOP/TOP_inst0/FFT_Control_inst2/data_out_re}} 
+add_wave {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/wr_clk}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/rd_clk}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/data_valid}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/rx_ready}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/data_re}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/tx_ready}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/uart_en}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/data_out}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/current_state}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/next_state}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/wr_en}} {{/tb_TOP/TOP_inst0/FIFO_Control_inst3/rd_en}} 
+add_wave {{/tb_TOP/TOP_inst0/uart_tx_inst5/data}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/uart_en}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/rd_clk}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/tx}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/clk_bps}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/uart_tx}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/num}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/tx_data}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/flag_nege}} {{/tb_TOP/TOP_inst0/uart_tx_inst5/num_r}} 
+run 1 ms

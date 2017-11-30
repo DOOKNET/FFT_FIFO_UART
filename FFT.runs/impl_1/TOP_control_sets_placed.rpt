@@ -1,0 +1,90 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Wed Nov 29 02:11:50 2017
+| Host         : DESKTOP-JC6NIF0 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    22 |
+| Unused register locations in slices containing registers |    69 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             326 |           84 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               9 |            4 |
+| Yes          | No                    | No                     |            2147 |          451 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              17 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|        Clock Signal        |                                                                Enable Signal                                                                |                                                                  Set/Reset Signal                                                                  | Slice Load Count | Bel Load Count |
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/axi_wrapper/config_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                         |                                                                                                                                                    |                1 |              1 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/axi_wrapper/ce_w2c                                                                                   | FFT_Control_inst2/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/control/delay_line4_for_rfd/memory_control[3].we_dpm_i_reg[3] |                1 |              4 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/control/control/pe_cnt/cnt_reg[2].addsub_reg_0         | FFT_Control_inst2/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/control/control/process_state_s                               |                2 |              4 |
+|  PLL_inst0/inst/clk_out1   | uart_tx_inst5/tx_data1                                                                                                                      |                                                                                                                                                    |                1 |              6 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/control/control/processing_state/ce_pedelay            |                                                                                                                                                    |                3 |              7 |
+|  PLL_inst0/inst/clk_out1   | uart_tx_inst5/tx_data[7]_i_1_n_0                                                                                                            |                                                                                                                                                    |                4 |              8 |
+|  PLL_inst0/inst/clk_out1   |                                                                                                                                             | uart_tx_inst5/cnt[9]_i_1_n_0                                                                                                                       |                4 |              9 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/control/control/processing_state/no_early_reg.I_TC_reg | FFT_Control_inst2/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/control/control/loading_state/no_early_reg.I_TC_reg           |                3 |              9 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/axi_wrapper/symbols_out_remaining[9]_i_1_n_513                                                       |                                                                                                                                                    |                4 |             10 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/axi_wrapper/xk_index_counter_ce                                                                      |                                                                                                                                                    |                4 |             12 |
+|  PLL_inst0/inst/clk_out1   | uart_tx_inst5/uart_tx0                                                                                                                      |                                                                                                                                                    |                3 |             12 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/xfft_inst/non_floating_point.arch_b.xfft_inst/control/control/loading_state/xn_index_counter_ce      |                                                                                                                                                    |                4 |             12 |
+|  uart_tx_inst5/rd_clk_BUFG | FIFO_Control_inst3/FIFO_inst0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/E[0]                                  |                                                                                                                                                    |                5 |             20 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/axi_wrapper/data_out_channel/data_out_fifo_write                                                     |                                                                                                                                                    |                4 |             25 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/p_4_out5_out                     |                                                                                                                                                    |                5 |             28 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/p_8_out                          |                                                                                                                                                    |                7 |             28 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                        |                                                                                                                                                    |                4 |             28 |
+|  PLL_inst0/inst/clk_out1   | FIFO_Control_inst3/FIFO_inst0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/E[0]                                  |                                                                                                                                                    |                6 |             30 |
+|  uart_tx_inst5/rd_clk_BUFG |                                                                                                                                             |                                                                                                                                                    |               10 |             42 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/axi_wrapper/i_sw_en                                                                                  |                                                                                                                                                    |               57 |            200 |
+|  PLL_inst0/inst/clk_out1   |                                                                                                                                             |                                                                                                                                                    |               74 |            284 |
+|  PLL_inst0/inst/clk_out1   | FFT_Control_inst2/FFT_inst0/U0/i_synth/axi_wrapper/ce_w2c                                                                                   |                                                                                                                                                    |              376 |           1949 |
++----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 4      |                     2 |
+| 6      |                     1 |
+| 7      |                     1 |
+| 8      |                     1 |
+| 9      |                     2 |
+| 10     |                     1 |
+| 12     |                     3 |
+| 16+    |                    10 |
++--------+-----------------------+
+
+
