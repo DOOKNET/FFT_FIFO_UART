@@ -1,7 +1,7 @@
 module	AD(
-	input		clk,		//100M系统时钟
-	input		DRY,		//AD反馈时钟	
-	input		ovr_in,		//AD电压超量程标识
+	input		clk,			//100M系统时钟
+	input		DRY,			//AD反馈时钟	
+	input		ovr_in,			//AD电压超量程标识
 	input		signed	[13:0]	ad_in,
 	output		signed	[13:0]	ad_out,
 	output		ovr_out
@@ -15,6 +15,5 @@ always @(posedge clk) begin
 end
 
 assign	ad_out = ad_reg3;
-
 
 endmodule
