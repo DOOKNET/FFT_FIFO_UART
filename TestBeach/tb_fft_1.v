@@ -105,12 +105,8 @@ initial begin
     s_axis_data_tdata = 32'd0;
     s_axis_data_tvalid = 0;
     
-
     #5000
     $finish;
-
-
 end
 
-
-endmodule // 
+endmodule  
