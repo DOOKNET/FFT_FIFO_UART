@@ -5,7 +5,6 @@
 // Design Name: 
 // Module Name: fft_tb
 //////////////////////////////////////////////////////////////////////////////////
-
 module tb_fft_2();
  
      reg clk;//50mhz
@@ -57,7 +56,6 @@ module tb_fft_2();
                                       $stop;
                              end
                     end
-                  
                       wire signed  [31:0] fft_dataout;
                     assign fft_dataout = xk_re;    //将输出的实部信号赋值给fft_dataout寄存器  
                      
@@ -75,7 +73,6 @@ module tb_fft_2();
                                       $stop;
                              end
                     end
-                  
                       wire signed  [31:0] fft_im_dataout;
                     assign fft_im_dataout = xk_im; //将输出的虚部信号赋值给fft_im_dataout寄存器     
                      
